@@ -1,0 +1,1288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rak's Pallikkoodam | School 2.o for Industry 4.0</title>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="icons/css/all.min.css" />
+        <!-- css files -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+        <link rel="stylesheet" href="css/portfolio.css" />
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <button class="close-btn" onclick="toggleSidebar()"><i class="fa-light fa-xmark"></i></button>
+                <div class="side-bar-header">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="logo" />
+                    </a>
+                    <h1>Class Teacher’s Classes</h1>
+                </div>
+                <ul>
+                    <h6>Active Classes</h6>
+                    <li>
+                        <a href="grade1.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Binance_coin.svg" alt="Binance_coin" />
+                                <p>GRADE 1A</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="classroom.html" class="active-nav">
+                            <div class="nav-item-na">
+                                <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective" />
+                                <p>GRADE 2C</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                                <span>2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grade3.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Solana_perspective.svg" alt="Solana_perspective" />
+                                <p>GRADE 3B</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grade4.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Tron_perspective.svg" alt="Tron_perspective" />
+                                <p>GRADE 4D</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                                <span>1</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <small>© Connected School</small>
+            </aside>
+            <main class="main-content">
+                <header class="header">
+                    <div class="header-inside">
+                        <div class="res-btn">
+                            <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fa-light fa-bars"></i></button>
+                            <div class="grade2">
+                                <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective" />
+                                <h1>GRADE 2C</h1>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="hour-glass" onclick="openModal('modal2')">
+                                <a href="#"><i class="fa-solid fa-hourglass-half"></i></a>
+                                <span>1</span>
+                            </li>
+                            <li class="bell" onclick="openModal('modal3')">
+                                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                                <span>11</span>
+                            </li>
+                            <li class="circle-question">
+                                <a href="#"><i class="fa-duotone fa-light fa-circle-question"></i></a>
+                            </li>
+                            <li class="avater" onclick="toggleDropdown(event)">
+                                <img src="assets/Avatar.svg" alt="avatar" />
+                                <i class="fa-light fa-chevron-down"></i>
+                                <form action="#" class="edit-card">
+                                    <button type="button" onclick="openModal('modal1')" class="active-bts">View Profile</button>
+                                    <button type="submit">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-inside-tabs">
+                        <ul>
+                            <li>
+                                <a href="classroom.html"><img src="assets/Books.svg" alt="Books" />Classroom</a>
+                            </li>
+                            <li>
+                                <a href="stroy.html"><img src="assets/Fire.svg" alt="Fire" />Class Story</a>
+                            </li>
+                            <li>
+                                <a href="diary.html"><img src="assets/Message.svg" alt="Message" />Digital Diary <span>1</span></a>
+                            </li>
+                            <li>
+                                <a href="calendar.html"><img src="assets/Calendar.svg" alt="Calendar" />Calendar</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html" class="active-nav"><img src="assets/Trophy.svg" alt="Trophy" />Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="homework.html"><img src="assets/Notebook.svg" alt="Notebook" />Homework</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-content1">
+                        <span class="close-btn-mark" onclick="closeModal('modal1')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="profile-header">
+                            <h4>Teacher Profile</h4>
+                            <img src="assets/Avatar.svg" alt="avatar" />
+                            <h1>Teacher First Name</h1>
+                            <p>Teacher Last Name</p>
+                        </div>
+                        <div class="profile-body">
+                            <div class="subjects">
+                                <h1>Subjects</h1>
+                                <div class="subject-btn">
+                                    <button type="button">Mathematics</button>
+                                    <button type="button">Aptitude</button>
+                                    <button type="button">Logical Reasoning</button>
+                                </div>
+                            </div>
+                            <div class="subjects">
+                                <h1>Roles</h1>
+                                <div class="subject-btn"><button type="button">GRADE 2C - Class Teacher</button><br /></div>
+                                <div class="subject-btn">
+                                    <button type="button">GRADE 2C - Mathematics</button>
+                                    <button type="button">GRADE 5A - Aptitude</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-btn">
+                            <button onclick="closeModal('modal1')" type="submit">Need Support?</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content model-aside">
+                        <div class="m-aside-head">
+                            <h1>Portfolio: Pending Approval</h1>
+                        </div>
+                        <div class="m-aside-body">
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>2d ago</span>.<span>GRADE 2D</span></li>
+                                </ul>
+                                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                                </ul>
+                                <img src="assets/student-3.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>5d ago</span>.<span>GRADE 3C</span></li>
+                                </ul>
+                                <img src="assets/student-4.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>3d ago</span>.<span>GRADE 1A</span></li>
+                                </ul>
+                                <img src="assets/student-1.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                        </div>
+                        <div class="m-aside-ft">
+                            <p>See All Pending Posts</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+                    <div class="modal-content model-aside">
+                        <div class="m-aside-head">
+                            <h1>Notifications</h1>
+                        </div>
+                        <div class="m-aside-body">
+                            <div class="aside-pendings">
+                                <img src="assets/Message.svg" class="Trophy" alt="Message" />
+                                <ul>
+                                    <h1><a href="#">1 New Message for Student Name!</a></h1>
+                                    <li>Student: Hi mam. What is the...</li>
+                                    <li><span>13h ago</span>.<span>GRADE 2C</span></li>
+                                </ul>
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Fire.svg" class="Trophy" alt="Fire" />
+                                <ul>
+                                    <h1><a href="#">Student liked your photo on Class Story!</a></h1>
+                                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                                </ul>
+                                <img src="assets/student-5.png" class="aside-stuednts" alt="student-5" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                                </ul>
+                                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Notebook.svg" class="Trophy" alt="Notebook" />
+                                <ul>
+                                    <h1><a href="#">1 new update in Homework</a></h1>
+                                    <li>Student: Need Help</li>
+                                    <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m-aside-ft">
+                            <span class="x-btn-mark"><i class="fa-solid fa-xmark"></i></span>
+                            <p>Clear All Notifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal12" class="modal">
+                    <div class="modal-content modal-content12">
+                        <span class="close-btn-mark" onclick="closeModal('modal12')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="edit-validation">
+                            <h1>New Portfolio Post</h1>
+                            <div class="search-main search-main2">
+                                <form id="form">
+                                    <input type="text" id="userInput" placeholder="What’s happening at GRADE 2C" />
+                                    <span>😁</span>
+                                </form>
+                                <div class="status status3">
+                                    <button class="uploaded"><img src="assets/Image_perspective.svg" alt="" />Photos</button>
+                                    <button><img src="assets/video.svg" alt="" />Videos</button>
+                                </div>
+                                <div class="image-uploader">
+                                    <input type="file" id="imageInput" multiple accept="image/*" hidden />
+                                    <div class="image-preview" id="imagePreview"></div>
+
+                                    <div class="img-controls">
+                                        <button class="upload-btn" onclick="document.getElementById('imageInput').click()">
+                                            <i class="fa-light fa-plus"></i>
+                                        </button>
+                                        <span id="addText">Add or Drag and Drop your files here</span>
+                                    </div>
+                                    <div class="info-text">
+                                        <span id="maxText">Add up to 6 Photos</span>
+                                        <button id="clearBtn" class="clear-btn">Clear All</button>
+                                    </div>
+                                </div>
+
+                                <div class="skils-main skils-main2">
+                                    <!-- First Dropdown (Skills) -->
+                                    <div class="dropdown" id="dropdown7">
+                                        <img src="assets/acogix 1.svg" alt="accept" />
+                                        <span id="selectedText7">Select Skills (1-3 Skills)</span>
+                                        <span class="dropdown-arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                        <div class="dropdown-menu">
+                                            <div class="menu-content menu-content3">
+                                                <label data-value="None">
+                                                    None
+                                                </label>
+                                                <label data-value="Creativity">
+                                                    <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                    Creativity
+                                                </label>
+                                                <label data-value="Critical thinking">
+                                                    <img src="assets/Frame 156.svg" alt="frame" />
+                                                    Critical thinking
+                                                </label>
+                                                <label data-value="Creativity2">
+                                                    <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                    Creativity
+                                                </label>
+                                                <label data-value="Creativity3">
+                                                    <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                    Creativity
+                                                </label>
+                                                <label data-value="Creativity4">
+                                                    <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                    Creativity
+                                                </label>
+                                                <label data-value="Creativity5">
+                                                    <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                    Creativity
+                                                </label>
+                                                <label data-value="Creativity6">
+                                                    <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                    Creativity
+                                                </label>
+                                                <label data-value="Creativity7">
+                                                    <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                    Creativity
+                                                </label>
+                                                <label data-value="Creativity8">
+                                                    <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                    Creativity
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Second Dropdown (SDG) -->
+                                    <div class="dropdown" id="dropdown8">
+                                        <img src="assets/Layer_1.svg" alt="acogix" />
+                                        <span id="selectedText8">Select SDG (1-3 SDG)</span>
+                                        <span class="dropdown-arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                        <div class="dropdown-menu dropdown-menu22">
+                                            <div class="menu-content menu-content3">
+                                                <label data-value="None">
+                                                    None
+                                                </label>
+                                                <label data-value="Gender Equality">
+                                                    <img src="assets/gender.svg" alt="frame" />
+                                                    Gender Equality
+                                                </label>
+                                                <label data-value="Gender Equality2">
+                                                    <img src="assets/gender.svg" alt="frame" />
+                                                    Gender Equality
+                                                </label>
+                                                <label data-value="Gender Equality3">
+                                                    <img src="assets/gender.svg" alt="frame" />
+                                                    Gender Equality
+                                                </label>
+                                                <label data-value="Quality Education">
+                                                    <img src="assets/Layer_2.svg" alt="layer" />
+                                                    Quality Education
+                                                </label>
+                                                <label data-value="Gender Equality4">
+                                                    <img src="assets/gender.svg" alt="frame" />
+                                                    Gender Equality
+                                                </label>
+                                                <label data-value="Quality Education2">
+                                                    <img src="assets/Layer_2.svg" alt="layer" />
+                                                    Quality Education
+                                                </label>
+                                                <label data-value="Quality Education3">
+                                                    <img src="assets/Layer_2.svg" alt="layer" />
+                                                    Quality Education
+                                                </label>
+                                                <label data-value="Quality Education4">
+                                                    <img src="assets/Layer_2.svg" alt="layer" />
+                                                    Quality Education
+                                                </label>
+                                                <label data-value="Quality Education5">
+                                                    <img src="assets/Layer_2.svg" alt="layer" />
+                                                    Quality Education
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal-content4-bts">
+                                <button class="publish-btn" type="submit" disabled="">Post to Portfolio</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal Structure -->
+                <!-- Modal -->
+                <div id="studentModal" class="modal">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <button class="prev-student"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next-student"><i class="fa-solid fa-arrow-right"></i></button>
+                        <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="modal-body">
+                            <div class="slider">
+                                <div class="slider-wrapper"></div>
+                                <div class="control-main">
+                                    <button class="prev"><i class="fa-solid fa-angle-left"></i></button>
+                                    <div class="dots-container"></div>
+                                    <button class="next"><i class="fa-solid fa-angle-right"></i></button>
+                                </div>
+                            </div>
+                            <div class="student-info-modal">
+                                <div class="user-profile-main">
+                                    <div class="user-profile">
+                                        <img src="assets/Avatar.svg" alt="avater" />
+                                        <ul>
+                                            <li><a>School Admin</a></li>
+                                            <li>
+                                                <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="delete-model">
+                                        <i class="fa-light fa-circle-ellipsis"></i>
+                                        <div class="edit-card">
+                                            <button onclick="openModal('modal19') " class="active-bts">Edit Post</button>
+                                            <button>Delete</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-title">
+                                    <h1 id="modal-title">Student Information</h1>
+                                    <span><i class="fa-solid fa-heart"></i> 2 Likes</span>
+                                </div>
+                                <div class="info-creativity">
+                                    <img src="assets/acogix 1.svg" alt="acogix" />
+                                    <div class="info-cre-bg">
+                                        <div class="circle-user">
+                                            <div>
+                                                <img src="assets/Frame 156.svg" alt="frame" />
+                                                <span>i</span>
+                                            </div>
+                                            <h1>Critical Thinking</h1>
+                                        </div>
+                                        <div class="circle-user">
+                                            <div>
+                                                <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                <span>i</span>
+                                            </div>
+                                            <h1>Creativity</h1>
+                                        </div>
+                                        <div class="circle-user">
+                                            <div>
+                                                <img src="assets/comunication.svg" alt="frame" />
+                                                <span>i</span>
+                                            </div>
+                                            <h1>Communication</h1>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="info-creativity">
+                                    <img src="assets/Layer_1.svg" alt="acogix" />
+                                    <div class="info-cre-bg">
+                                        <div class="circle-user">
+                                            <div>
+                                                <img src="assets/Layer_2.svg" alt="frame" />
+                                                <span>i</span>
+                                            </div>
+                                            <h1>
+                                                Quality <br />
+                                                Education
+                                            </h1>
+                                        </div>
+                                        <div class="circle-user">
+                                            <div>
+                                                <img src="assets/circle-star.svg" alt="frame" />
+                                                <span>i</span>
+                                            </div>
+                                            <h1>
+                                                Partnerships for <br />
+                                                the Goals
+                                            </h1>
+                                        </div>
+                                        <div class="circle-user">
+                                            <div>
+                                                <img src="assets/gender.svg" alt="frame" />
+                                                <span>i</span>
+                                            </div>
+                                            <h1>
+                                                Gender <br />
+                                                Equality
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal19" class="modal">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <!-- <button class="prev-student"><i class="fa-solid fa-arrow-left"></i></button>
+                      <button class="next-student"><i class="fa-solid fa-arrow-right"></i></button> -->
+                        <span class="close" onclick="closeModal('modal19')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="modal-body">
+                            <div class="slider-edit">
+                                <img src="assets/edit-student.png" alt="" />
+                                <span class="hourglass-start-yellow-edit"><i class="fa-regular fa-hourglass-start"></i></span>
+                            </div>
+                            <div class="student-info-modal">
+                                <div class="user-profile-main">
+                                    <div class="user-profile">
+                                        <img src="assets/plant-green.svg" alt="avater" />
+                                        <ul>
+                                            <li><a>Student Name</a></li>
+                                            <li>
+                                                <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-title info-title-edit">
+                                    <h1>The busy montessori kids!</h1>
+                                </div>
+
+                                <div class="admin-controls">
+                                    <div class="skils-main">
+                                        <!-- Info section for dropdown1 (Skills) -->
+                                        <div class="info-creativity" id="info-creativity-skills" style="display: none;">
+                                            <img src="assets/acogix 1.svg" alt="acogix" />
+                                            <div class="info-cre-bg" id="info-creativity-content-skills">
+                                                <!-- Selected skills will be added dynamically -->
+                                            </div>
+                                        </div>
+
+                                        <!-- Info section for dropdown2 (SDG) -->
+                                        <div class="info-creativity" id="info-creativity-sdg" style="display: none;">
+                                            <img src="assets/Layer_1.svg" alt="acogix" />
+                                            <div class="info-cre-bg" id="info-creativity-content-sdg">
+                                                <!-- Selected SDGs will be added dynamically -->
+                                            </div>
+                                        </div>
+
+                                        <!-- First Dropdown (Skills) -->
+                                        <div class="dropdown" id="dropdown1">
+                                            <img src="assets/acogix 1.svg" alt="accept" />
+                                            <span id="selectedText1">Select Skills (1-3 Skills)</span>
+                                            <span class="dropdown-arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                            <div class="dropdown-menu">
+                                                <div class="menu-content">
+                                                    <label data-value="None">
+                                                        None
+                                                    </label>
+                                                    <label data-value="Critical thinking">
+                                                        <img src="assets/Frame 156.svg" alt="frame" />
+                                                        Critical thinking
+                                                    </label>
+                                                    <label data-value="Critical thinking2">
+                                                        <img src="assets/Frame 156.svg" alt="frame" />
+                                                        Critical thinking
+                                                    </label>
+                                                    <label data-value="Creativity2">
+                                                        <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                        Creativity
+                                                    </label>
+                                                    <label data-value="Gender Equality3">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- Second Dropdown (SDG) -->
+                                        <div class="dropdown" id="dropdown2">
+                                            <img src="assets/Layer_1.svg" alt="acogix" />
+                                            <span id="selectedText2">Select SDG (1-3 SDG)</span>
+                                            <span class="dropdown-arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                            <div class="dropdown-menu dropdown-menu2">
+                                                <div class="menu-content">
+                                                    <label data-value="None">
+                                                        None
+                                                    </label>
+                                                    <label data-value="Gender Equality">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                    <label data-value="Quality Education">
+                                                        <img src="assets/Layer_2.svg" alt="layer" />
+                                                        Quality Education
+                                                    </label>
+                                                    <label data-value="Gender Equality4">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                    <label data-value="Quality Education1">
+                                                        <img src="assets/Layer_2.svg" alt="layer" />
+                                                        Quality Education
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="controls-btn">
+                                        <button onclick="openModal('modal20'); closeModal('modal19')" class="approved"><i class="fa-solid fa-thumbs-up"></i>Approve</button>
+                                        <button class="reject" onclick="openModal('modal21'); closeModal('modal19')"><i class="fa-solid fa-thumbs-down"></i>Reject</button>
+                                        <form>
+                                            <textarea rows="5" cols="50" placeholder="Reason for rejection"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal20" class="modal">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <!-- <button class="prev-student"><i class="fa-solid fa-arrow-left"></i></button>
+                        <button class="next-student"><i class="fa-solid fa-arrow-right"></i></button> -->
+                        <span class="close" onclick="closeModal('modal20')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="modal-body">
+                            <div class="slider-edit">
+                                <img src="assets/edit-student.png" alt="" />
+                                <span class="thumbs-down-green-edit"><i class="fa-solid fa-thumbs-up"></i></span>
+                            </div>
+                            <div class="student-info-modal">
+                                <div class="user-profile-main">
+                                    <div class="user-profile">
+                                        <img src="assets/plant-green.svg" alt="avater" />
+                                        <ul>
+                                            <li><a>Student Name</a></li>
+                                            <li>
+                                                <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-title info-title-edit">
+                                    <h1>The busy montessori kids!</h1>
+                                </div>
+                                <div class="admin-controls">
+                                    <div class="skils-main">
+                                        <div class="info-creativity" id="info-creativity-skills-2" style="display: none;">
+                                            <img src="assets/acogix 1.svg" alt="acogix" />
+                                            <div class="info-cre-bg" id="info-creativity-content-skills-2"></div>
+                                        </div>
+                                        <div class="info-creativity" id="info-creativity-sdg-2" style="display: none;">
+                                            <img src="assets/Layer_1.svg" alt="acogix" />
+                                            <div class="info-cre-bg" id="info-creativity-content-sdg-2"></div>
+                                        </div>
+                                        <div class="dropdown" id="dropdown3">
+                                            <img src="assets/acogix 1.svg" alt="accept" />
+                                            <span id="selectedText3">Select Skills (1-3 Skills)</span>
+                                            <span class="dropdown-arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                            <div class="dropdown-menu">
+                                                <div class="menu-content">
+                                                    <label data-value="None">
+                                                        None
+                                                    </label>
+                                                    <label data-value="Critical thinking">
+                                                        <img src="assets/Frame 156.svg" alt="frame" />
+                                                        Critical thinking
+                                                    </label>
+                                                    <label data-value="Critical thinking2">
+                                                        <img src="assets/Frame 156.svg" alt="frame" />
+                                                        Critical thinking
+                                                    </label>
+                                                    <label data-value="Creativity2">
+                                                        <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                        Creativity
+                                                    </label>
+                                                    <label data-value="Gender Equality3">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown" id="dropdown4">
+                                            <img src="assets/Layer_1.svg" alt="acogix" />
+                                            <span id="selectedText4">Select SDG (1-3 SDG)</span>
+                                            <span class="dropdown-arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                            <div class="dropdown-menu dropdown-menu2">
+                                                <div class="menu-content">
+                                                    <label data-value="None">
+                                                        None
+                                                    </label>
+                                                    <label data-value="Gender Equality">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                    <label data-value="Quality Education">
+                                                        <img src="assets/Layer_2.svg" alt="layer" />
+                                                        Quality Education
+                                                    </label>
+                                                    <label data-value="Gender Equality4">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                    <label data-value="Quality Education1">
+                                                        <img src="assets/Layer_2.svg" alt="layer" />
+                                                        Quality Education
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="controls-btn">
+                                        <button class="approved" onclick="closeModal('modal20')"><i class="fa-solid fa-thumbs-up"></i>Approve</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal21" class="modal">
+                    <div class="modal-overlay"></div>
+                    <div class="modal-content">
+                        <!-- <button class="prev-student"><i class="fa-solid fa-arrow-left"></i></button>
+                      <button class="next-student"><i class="fa-solid fa-arrow-right"></i></button> -->
+                        <span class="close" onclick="closeModal('modal21')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="modal-body">
+                            <div class="slider-edit">
+                                <img src="assets/edit-student.png" alt="" />
+                                <span class="thumbs-down-pink-edit"><i class="fa-solid fa-thumbs-down"></i></span>
+                            </div>
+                            <div class="student-info-modal">
+                                <div class="user-profile-main">
+                                    <div class="user-profile">
+                                        <img src="assets/plant-green.svg" alt="avater" />
+                                        <ul>
+                                            <li><a>Student Name</a></li>
+                                            <li>
+                                                <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="info-title info-title-edit">
+                                    <h1>The busy montessori kids!</h1>
+                                </div>
+                                <div class="admin-controls">
+                                    <div class="skils-main">
+                                        <div class="info-creativity" id="info-creativity-skills-5" style="display: none;">
+                                            <img src="assets/acogix 1.svg" alt="acogix" />
+                                            <div class="info-cre-bg" id="info-creativity-content-skills-5"></div>
+                                        </div>
+                                        <div class="info-creativity" id="info-creativity-sdg-6" style="display: none;">
+                                            <img src="assets/Layer_1.svg" alt="acogix" />
+                                            <div class="info-cre-bg" id="info-creativity-content-sdg-6"></div>
+                                        </div>
+                                        <div class="dropdown" id="dropdown5">
+                                            <img src="assets/acogix 1.svg" alt="accept" />
+                                            <span id="selectedText5">Select Skills (1-3 Skills)</span>
+                                            <span class="dropdown-arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                            <div class="dropdown-menu">
+                                                <div class="menu-content">
+                                                    <label data-value="None">
+                                                        None
+                                                    </label>
+                                                    <label data-value="Critical thinking">
+                                                        <img src="assets/Frame 156.svg" alt="frame" />
+                                                        Critical thinking
+                                                    </label>
+                                                    <label data-value="Critical thinking2">
+                                                        <img src="assets/Frame 156.svg" alt="frame" />
+                                                        Critical thinking
+                                                    </label>
+                                                    <label data-value="Creativity2">
+                                                        <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                        Creativity
+                                                    </label>
+                                                    <label data-value="Gender Equality3">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="dropdown" id="dropdown6">
+                                            <img src="assets/Layer_1.svg" alt="acogix" />
+                                            <span id="selectedText6">Select SDG (1-3 SDG)</span>
+                                            <span class="dropdown-arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                            <div class="dropdown-menu dropdown-menu2">
+                                                <div class="menu-content">
+                                                    <label data-value="None">
+                                                        None
+                                                    </label>
+                                                    <label data-value="Gender Equality">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                    <label data-value="Quality Education">
+                                                        <img src="assets/Layer_2.svg" alt="layer" />
+                                                        Quality Education
+                                                    </label>
+                                                    <label data-value="Gender Equality4">
+                                                        <img src="assets/gender.svg" alt="frame" />
+                                                        Gender Equality
+                                                    </label>
+                                                    <label data-value="Quality Education1">
+                                                        <img src="assets/Layer_2.svg" alt="layer" />
+                                                        Quality Education
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="controls-btn">
+                                        <button class="reject" onclick="closeModal('modal21')"><i class="fa-solid fa-thumbs-down"></i>Reject</button>
+                                        <form>
+                                            <textarea rows="5" cols="50" placeholder="Reason for rejection"></textarea>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-all">
+                    <div class="user-aside">
+                        <h1>GRADE 2C Students</h1>
+                        <ul>
+                            <li>
+                                <img src="assets/plant-green.svg" alt="" />
+                                <a href="#">Amir Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-pink.svg" alt="" />
+                                <a href="#">Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-red.svg" alt="" />
+                                <a href="#">Xavier Krishna Amir</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-green.svg" alt="" />
+                                <a href="#">Amir Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-pink.svg" alt="" />
+                                <a href="#">Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-red.svg" alt="" />
+                                <a href="#">Xavier Krishna Amir</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-green.svg" alt="" />
+                                <a href="#">Amir Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-pink.svg" alt="" />
+                                <a href="#">Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-red.svg" alt="" />
+                                <a href="#">Xavier Krishna Amir</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-green.svg" alt="" />
+                                <a href="#">Amir Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-pink.svg" alt="" />
+                                <a href="#">Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-red.svg" alt="" />
+                                <a href="#">Xavier Krishna Amir</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-green.svg" alt="" />
+                                <a href="#">Amir Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-pink.svg" alt="" />
+                                <a href="#">Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-red.svg" alt="" />
+                                <a href="#">Xavier Krishna Amir</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-green.svg" alt="" />
+                                <a href="#">Amir Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-pink.svg" alt="" />
+                                <a href="#">Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-red.svg" alt="" />
+                                <a href="#">Xavier Krishna Amir</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-green.svg" alt="" />
+                                <a href="#">Amir Krishna Xavier</a>
+                            </li>
+                            <li>
+                                <img src="assets/plant-pink.svg" alt="" />
+                                <a href="#">Krishna Xavier</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="portfolio-post">
+                        <div class="post-header">
+                            <h1>GRADE 2C Portfolio Posts</h1>
+                            <div class="tabs-set tabs-set1" role="tablist">
+                                <label class="tab-item">All Posts</label>
+                                <label class="tab-item">Your Posts</label>
+                                <label class="tab-item">Student Posts</label>
+                                <span class="glider-element">All Posts</span>
+                            </div>
+                        </div>
+                        <div class="content-container content-container1">
+                            <div class="tab-content active-content">
+                                <div class="all-students">
+                                    <h1>Today, 24 Aug 2024</h1>
+                                    <div class="students-card-main">
+                                        <div class="student-card student-card-model">
+                                            <div class="student-img">
+                                                <img src="assets/student-main.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="hourglass-start-yellow"><i class="fa-regular fa-hourglass-start"></i></span>
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>First class test mark - 40/40</h1>
+                                            </div>
+                                        </div>
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main1.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="thumbs-down-pink"><i class="fa-solid fa-thumbs-up"></i></span>
+
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>Drawing classes done with distinction.</h1>
+                                            </div>
+                                            <div class="disable-student"></div>
+                                        </div>
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main2.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-light.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>Excellent in Arts!</h1>
+                                                <div class="creativity-main">
+                                                    <div class="creativity">
+                                                        <img src="assets/acogix 1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/Frame 156.svg" alt="frame" />
+                                                            <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                            <img src="assets/Vector.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="creativity">
+                                                        <img src="assets/Layer_1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/gender.svg" alt="frame" />
+                                                            <img src="assets/Layer_2.svg" alt="frame" />
+                                                            <img src="assets/circle-star.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-students">
+                                    <h1>Yesterday, 23 Aug 2024</h1>
+                                    <div class="students-card-main">
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main1.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="thumbs-up-green"><i class="fa-solid fa-thumbs-up"></i></span>
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/group.png" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>First class test mark - 40/40</h1>
+                                                <div class="creativity-main">
+                                                    <div class="creativity">
+                                                        <img src="assets/acogix 1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/Frame 156.svg" alt="frame" />
+                                                            <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                            <img src="assets/Vector.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="creativity">
+                                                        <img src="assets/Layer_1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/gender.svg" alt="frame" />
+                                                            <img src="assets/Layer_2.svg" alt="frame" />
+                                                            <img src="assets/circle-star.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="all-students">
+                                    <h1>Today, 24 Aug 2024</h1>
+                                    <div class="students-card-main">
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Xavier Amir Krishna</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>First class test mark - 40/40</h1>
+                                                <div class="creativity-main">
+                                                    <div class="creativity">
+                                                        <img src="assets/acogix 1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/Frame 156.svg" alt="frame" />
+                                                            <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                            <img src="assets/Vector.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="creativity">
+                                                        <img src="assets/Layer_1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/gender.svg" alt="frame" />
+                                                            <img src="assets/Layer_2.svg" alt="frame" />
+                                                            <img src="assets/circle-star.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main2.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/group.png" alt="" />
+                                                        <a href="#">Multiple Students</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>First class test mark - 40/40</h1>
+                                                <div class="creativity-main">
+                                                    <div class="creativity">
+                                                        <img src="assets/acogix 1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/Frame 156.svg" alt="frame" />
+                                                            <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                            <img src="assets/Vector.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="creativity">
+                                                        <img src="assets/Layer_1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/gender.svg" alt="frame" />
+                                                            <img src="assets/Layer_2.svg" alt="frame" />
+                                                            <img src="assets/circle-star.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-students">
+                                    <h1>Yesterday, 23 Aug 2024</h1>
+                                    <div class="students-card-main">
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-4.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Xavier Amir Krishna</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>Drawing classes done with distinction.</h1>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="all-students">
+                                    <h1>Today, 24 Aug 2024</h1>
+                                    <div class="students-card-main">
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="hourglass-start-yellow"><i class="fa-regular fa-hourglass-start"></i></span>
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>First class test mark - 40/40</h1>
+                                            </div>
+                                        </div>
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main2.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="thumbs-up-green"><i class="fa-solid fa-thumbs-up"></i></span>
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>Excellent in Arts!</h1>
+                                            </div>
+                                        </div>
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main1.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="thumbs-up-green"><i class="fa-solid fa-thumbs-up"></i></span>
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-light.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>Excellent in Arts!</h1>
+                                                <div class="creativity-main">
+                                                    <div class="creativity">
+                                                        <img src="assets/acogix 1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/Frame 156.svg" alt="frame" />
+                                                            <img src="assets/noun-creativity-7041418 1.svg" alt="frame" />
+                                                            <img src="assets/Vector.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="creativity">
+                                                        <img src="assets/Layer_1.svg" alt="acogix" />
+                                                        <div class="cre-bg">
+                                                            <img src="assets/gender.svg" alt="frame" />
+                                                            <img src="assets/Layer_2.svg" alt="frame" />
+                                                            <img src="assets/circle-star.svg" alt="frame" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="all-students">
+                                    <h1>Yesterday, 23 Aug 2024</h1>
+                                    <div class="students-card-main">
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main1.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="thumbs-down-pink"><i class="fa-solid fa-thumbs-up"></i></span>
+
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>Drawing classes done with distinction.</h1>
+                                            </div>
+                                            <div class="disable-student"></div>
+                                        </div>
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-main2.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="hourglass-start-yellow"><i class="fa-regular fa-hourglass-start"></i></span>
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>Excellent in Arts!</h1>
+                                            </div>
+                                        </div>
+                                        <div class="student-card">
+                                            <div class="student-img">
+                                                <img src="assets/student-4.png" alt="student" data-slider="true" />
+                                                <div class="student-oaverlay">
+                                                    <div class="thumb">
+                                                        <span class="thumbs-down-pink"><i class="fa-solid fa-thumbs-up"></i></span>
+
+                                                        <button>3h ago</button>
+                                                    </div>
+                                                    <div class="detail-name">
+                                                        <img src="assets/plant-red.svg" alt="" />
+                                                        <a href="#">Amir Krishna Xavier</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="student-info">
+                                                <h1>Drawing classes done with distinction.</h1>
+                                            </div>
+                                            <div class="disable-student"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button onclick="openModal('modal12')" class="plus-pop"><i class="fa-light fa-plus"></i></button>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/dashbaord.js"></script>
+        <script src="js/portfolio.js"></script>
+    </body>
+</html>

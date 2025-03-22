@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rak's Pallikkoodam | School 2.o for Industry 4.0</title>
+    <!-- font awesome -->
+     <link rel="stylesheet" href="icons/css/all.min.css">
+    <!-- css files -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/home-work.css">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+          <button class="close-btn" onclick="toggleSidebar()"><i class="fa-light fa-xmark"></i></button>
+          <div class="side-bar-header">
+            <a href="index.html">
+             <img src="assets/logo.svg" alt="logo">
+            </a>
+            <h1>Class Teacher’s Classes</h1>
+          </div>
+          <ul>
+            <h6>Active Classes</h6>
+            <li>
+              <a href="grade1.html" >
+                <div class="nav-item-na">
+                  <img src="assets/Binance_coin.svg" alt="Binance_coin">
+                  <p>GRADE 1A</p>
+                </div>
+                <div class="notify">
+                  <i class="fa-solid fa-message-dots"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="classroom.html" class="active-nav">
+                <div class="nav-item-na">
+                  <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective">
+                  <p>GRADE 2C</p>
+                </div>
+                <div class="notify">
+                  <i class="fa-solid fa-message-dots"></i>
+                  <span>2</span>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="grade3.html">
+                <div class="nav-item-na">
+                  <img src="assets/Solana_perspective.svg" alt="Solana_perspective">
+                  <p>GRADE 3B</p>
+                </div>
+                <div class="notify">
+                  <i class="fa-solid fa-message-dots"></i>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="grade4.html">
+                <div class="nav-item-na">
+                  <img src="assets/Tron_perspective.svg" alt="Tron_perspective">
+                  <p>GRADE 4D</p>
+                </div>
+                <div class="notify">
+                  <i class="fa-solid fa-message-dots"></i>
+                  <span>1</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <small>© Connected School</small>
+        </aside>
+        <main class="main-content">
+          <header class="header">
+            <div class="header-inside">
+              <div class="res-btn">
+                <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fa-light fa-bars"></i></button>
+                <div class="grade2">
+                  <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective">
+                  <h1>GRADE 2C</h1>
+                </div>
+            </div>
+            <ul>
+              <li class="hour-glass" onclick="openModal('modal2')">
+                  <a href="#"><i class="fa-solid fa-hourglass-half"></i></a>
+                  <span>1</span>
+              </li>
+              <li class="bell" onclick="openModal('modal3')">
+                  <a href="#"><i class="fa-solid fa-bell"></i></a>
+                  <span>11</span>
+              </li>
+              <li class="circle-question">
+                  <a href="#"><i class="fa-duotone fa-light fa-circle-question"></i></a>
+              </li>
+              <li class="avater" onclick="toggleDropdown(event)">
+                  <img src="assets/Avatar.svg" alt="avatar">
+                  <i class="fa-light fa-chevron-down"></i>
+                  <form action="#" class="edit-card">
+                      <button type="button"  onclick="openModal('modal1')" class="active-bts">View Profile</button>
+                      <button type="submit">Logout</button>
+                  </form>
+              </li>
+          </ul>
+            </div>
+            <div class="header-inside-tabs">
+              <ul>
+                <li>
+                  <a href="classroom.html" ><img src="assets/Books.svg" alt="Books">Classroom</a>
+                </li>
+                <li>
+                  <a href="stroy.html" ><img src="assets/Fire.svg" alt="Fire">Class Story</a>
+                </li>
+                <li>
+                  <a href="diary.html" ><img src="assets/Message.svg" alt="Message">Digital Diary <span>1</span></a>
+                </li>
+                <li>
+                  <a href="calendar.html"><img src="assets/Calendar.svg" alt="Calendar">Calendar</a>
+                </li>
+                <li>
+                  <a href="portfolio.html" ><img src="assets/Trophy.svg" alt="Trophy">Portfolio</a>
+                </li>
+                <li>
+                  <a href="homework.html" class="active-nav"><img src="assets/Notebook.svg" alt="Notebook">Homework</a>
+                </li>
+
+              </ul>
+            </div>
+          </header>
+          <div id="modal1" class="modal">
+            <div class="modal-content modal-content1">
+                    <span class="close-btn-mark" onclick="closeModal('modal1')"><i class="fa-solid fa-xmark"></i></span>
+                    <div class="profile-header">
+                      <h4>Teacher Profile</h4>
+                        <img src="assets/Avatar.svg" alt="avatar">
+                        <h1>Teacher First Name</h1>
+                        <p>Teacher Last Name</p>
+                    </div>
+                    <div class="profile-body">
+                      <div class="subjects">
+                        <h1>Subjects</h1>
+                        <div class="subject-btn">
+                          <button type="button">Mathematics</button>
+                          <button type="button">Aptitude</button>
+                          <button type="button">Logical Reasoning</button>
+                        </div>
+                      </div>
+                      <div class="subjects">
+                        <h1>Roles</h1>
+                        <div class="subject-btn">
+                          <button type="button">GRADE 2C - Class Teacher</button><br> 
+                        </div>
+                        <div class="subject-btn">
+                          <button type="button">GRADE 2C - Mathematics</button>
+                          <button type="button">GRADE 5A - Aptitude</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="submit-btn">
+                    <button  onclick="closeModal('modal1')" type="submit">Need Support?</button>
+                    </div>
+            </div>
+        </div>
+          <div id="modal2" class="modal">
+            <div class="modal-content model-aside">
+              <div class="m-aside-head">
+                <h1>Portfolio: Pending Approval</h1>
+              </div>
+              <div class="m-aside-body">
+                <div class="aside-pendings">
+                  <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective">
+                  <ul>
+                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                    <li>Student: Completed the ta...</li>
+                    <li><span>2d ago</span>.<span>GRADE 2D</span></li>
+                  </ul>
+                  <img src="assets/student-2.png" class="aside-stuednts" alt="student-1">
+                </div>
+                <div class="aside-pendings">
+                  <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective">
+                  <ul>
+                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                    <li>Student: Completed the ta...</li>
+                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                  </ul>
+                  <img src="assets/student-3.png" class="aside-stuednts" alt="student-1">
+                </div>
+                <div class="aside-pendings">
+                  <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective">
+                  <ul>
+                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                    <li>Student: Completed the ta...</li>
+                    <li><span>5d ago</span>.<span>GRADE 3C</span></li>
+                  </ul>
+                  <img src="assets/student-4.png" class="aside-stuednts" alt="student-1">
+                </div>
+                <div class="aside-pendings">
+                  <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective">
+                  <ul>
+                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                    <li>Student: Completed the ta...</li>
+                    <li><span>3d ago</span>.<span>GRADE 1A</span></li>
+                  </ul>
+                  <img src="assets/student-1.png" class="aside-stuednts" alt="student-1">
+                </div>
+              </div>
+              <div class="m-aside-ft">
+                <p>See All Pending Posts</p>
+              </div>
+            </div>
+        </div>
+        <div id="modal3" class="modal">
+          <div class="modal-content model-aside">
+            <div class="m-aside-head">
+              <h1>Notifications</h1>
+            </div>
+            <div class="m-aside-body">
+              <div class="aside-pendings">
+                <img src="assets/Message.svg" class="Trophy" alt="Message">
+                <ul>
+                  <h1><a href="#">1 New Message for Student Name!</a></h1>
+                  <li>Student: Hi mam. What is the...</li>
+                  <li><span>13h ago</span>.<span>GRADE 2C</span></li>
+                </ul>
+              </div>
+              <div class="aside-pendings">
+                <img src="assets/Fire.svg" class="Trophy" alt="Fire">
+                <ul>
+                  <h1><a href="#">Student liked your photo on Class Story!</a></h1>
+                  <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                </ul>
+                <img src="assets/student-5.png" class="aside-stuednts" alt="student-5">
+              </div>
+              <div class="aside-pendings">
+                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective">
+                <ul>
+                  <h1><a href="#">Student added a portfolio post!</a></h1>
+                  <li>Student: Completed the ta...</li>
+                  <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                </ul>
+                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1">
+              </div>
+              <div class="aside-pendings">
+                <img src="assets/Notebook.svg" class="Trophy" alt="Notebook">
+                <ul>
+                  <h1><a href="#">1 new update in Homework</a></h1>
+                  <li>Student: Need Help</li>
+                  <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                </ul>
+              </div>
+            </div>
+            <div class="m-aside-ft">
+              <span class="x-btn-mark"><i class="fa-solid fa-xmark"></i></span>
+              <p>Clear All Notifications</p>
+            </div>
+          </div>
+        </div>
+        <div id="modal21" class="modal">
+          <div class="modal-content modal-content21">
+              <span class="close-btn-mark" onclick="closeModal('modal21')"><i class="fa-solid fa-xmark"></i></span>
+               <div class="model-cards21">
+                  <div class="assign-card">
+                    <div class="user-profile-main">
+                      <div class="user-profile">
+                          <img src="assets/Avatar.svg" alt="avater">
+                          <ul>
+                              <li><a>School Admin</a></li>
+                              <li>
+                                  <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                              </li>
+                          </ul>
+                      </div>
+                      <button class="lang">English</button>
+                    </div>
+                    <div class="teacher-info">
+                      <h1>My Favorite Animal Report</h1>
+                      <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                    </div>
+                    <div class="tech-animities">
+                      <button>
+                          <img src="assets/video.svg" alt="video">
+                          <span>My Favorite Animal Report</span>
+                      </button>
+                      <button>
+                        <img src="assets/video.svg" alt="video">
+                        <span>What it eats, and one fun fact</span>
+                    </button>
+                    <button>
+                      <img src="assets/Image_perspective.svg" alt="video">
+                      <span> Include details like where it lives,</span>
+                  </button>
+                  <button>
+                    <img src="assets/Link.svg" alt="video">
+                    <span>You can also draw a picture of the animal</span>
+                  </button>
+                    </div>
+                  </div>
+                  <div class="model-new-updates">
+                    <h1>2 New Updates</h1>
+                    <div class="update-chat">
+                      <div class="update-chat-left">
+                        <img src="assets/plant-green.svg" alt="plant-green">
+                      <ul>
+                        <li><h1>Krishna Amir Xavier</h1></li>
+                        <li><a href="www.schoolapp.in/homework/student/upload.." target="_blank">www.schoolapp.in/homework/student/upload..</a></li>
+                        <li><a href="www.schoolapp.in/homework/student/upload.." target="_blank">www.schoolapp.in/homework/student/upload..</a></li>
+                        <li><p>Kindly review and let me know mam!</p></li>
+                      </ul>
+                      </div>
+                      <div class="chat-time-detail">
+                        <span>12h</span>
+                        <i class="fa-solid fa-ellipsis-stroke"></i>
+                      </div>
+                    </div>
+                    <div class="update-chat">
+                      <div class="update-chat-left">
+                        <img src="assets/Avatar.svg" alt="plant-green">
+                      <ul>
+                        <li><h1>Class Teacher</h1></li>
+                        <li><p>Good work!</p></li>
+                      </ul>
+                      </div>
+                      <div class="chat-time-detail">
+                        <span>12h</span>
+                        <i class="fa-solid fa-ellipsis-stroke"></i>
+                      </div>
+                    </div>
+                    <form>
+                      <input type="text" placeholder="Complete it before evenin|">
+                      <i class="fa-regular fa-paper-plane"></i>
+                    </form>
+                  </div>
+               </div>
+               <div class="model-user-aside">
+                <h1>GRADE 2C Students</h1>
+                <ul>
+                    <li onclick="openModal('modal21')">
+                        <a href="#"><img src="assets/plant-green.svg" alt="" /> Amir Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="complete-btn">Completed<i class="fa-regular fa-angle-down"></i></button>
+                          <div class="complete-drop-dwon">
+                            <a href="#">Completed</a>
+                            <a href="#">Rework</a>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/plant-pink.svg" alt="" /> Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="complete-btn">Completed<i class="fa-regular fa-angle-down"></i></button>
+                          <div class="complete-drop-dwon">
+                            <a href="#">Completed</a>
+                            <a href="#">Rework</a>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/plant-red.svg" alt="" /> Xavier Krishna Amir</a>
+                        <div class="update-btn">
+                          <button type="button" class="complete-btn">Completed<i class="fa-regular fa-angle-down"></i></button>
+                          <div class="complete-drop-dwon">
+                            <a href="#">Completed</a>
+                            <a href="#">Rework</a>
+                          </div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="assets/plant-green.svg" alt="" />Amir Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/plant-pink.svg" alt="" /> Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/plant-red.svg" alt="" /> Xavier Krishna Amir</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/plant-green.svg" alt="" /> Amir Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"> <img src="assets/plant-pink.svg" alt="" /> Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="need-help-btn">Need Help<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/plant-red.svg" alt="" /> Xavier Krishna Amir</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/plant-green.svg" alt="" /> Amir Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#"><img src="assets/plant-pink.svg" alt="" /> Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="need-help-btn">Need Help<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <a href="#"><img src="assets/plant-red.svg" alt="" /> Xavier Krishna Amir</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <a href="#"><img src="assets/plant-green.svg" alt="" /> Amir Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <a href="#"><img src="assets/plant-pink.svg" alt="" /> Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <a href="#"><img src="assets/plant-red.svg" alt="" /> Xavier Krishna Amir</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <a href="#"><img src="assets/plant-green.svg" alt="" /> Amir Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <a href="#"> <img src="assets/plant-pink.svg" alt="" />Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                       
+                        <a href="#"> <img src="assets/plant-red.svg" alt="" /> Xavier Krishna Amir</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                       
+                        <a href="#"> <img src="assets/plant-green.svg" alt="" /> Amir Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                    <li>
+                        
+                        <a href="#"> <img src="assets/plant-pink.svg" alt="" />Krishna Xavier</a>
+                        <div class="update-btn">
+                          <button type="button" class="not-done-btn">Not Done<i class="fa-regular fa-angle-down"></i></button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+          </div>
+      </div>
+          <div id="modal22" class="modal" >
+            <div class="modal-content modal-content22">
+                <span class="close-btn-mark" onclick="closeModal('modal22')">
+                    <i class="fa-solid fa-xmark"></i>
+                </span>
+                <div class="valuation-main">
+                  <h1>New Homework</h1>
+                    <div class="valuation-right">
+                        <button onclick="closeModal('modal22'); openModal('modal23')" type="button">Tamil</button>
+                        <button onclick="closeModal('modal22'); openModal('modal23')" type="button">English</button>
+                        <button onclick="closeModal('modal22'); openModal('modal23')" type="button">Hindi</button>
+                        <button onclick="closeModal('modal22'); openModal('modal23')" type="button">Science</button>
+                        <button onclick="closeModal('modal22'); openModal('modal23')" type="button">Maths</button>
+                        <button onclick="closeModal('modal22'); openModal('modal23')" type="button">Arts</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="modal23" class="modal" >
+          <div class="modal-content modal-content22">
+              <span class="close-btn-mark" onclick="closeModal('modal23')">
+                  <i class="fa-solid fa-xmark"></i>
+              </span>
+              <div class="valuation-main">
+                <h1>New Homework</h1>
+                 <div class="valuation-right-2">
+                  <div class="user-avater">
+                    <img src="assets/Avatar.svg" alt="avatar">
+                    <ul>
+                      <li>Class Teacher</li>
+                      <li><i class="fa-solid fa-book-open"></i>GRADE 2C</li>
+                    </ul>
+                  </div>
+                  <form>
+                    <input type="text" id="home-work" placeholder="Homework Title">
+                    <textarea name="details" id="details" placeholder="Homework Description" cols="30"></textarea>
+                  </form>
+                  <h6>You can add multiple files combining Photos, Videos & Docs</h6>
+                  <div class="upload-container">
+                    <button id="photoBtn" class="upload-btn" onclick="document.getElementById('imgUpload').click()">
+                        <img src="assets/Image_perspective.svg" alt=""> Upload Photo
+                    </button>
+                    <input type="file" id="imgUpload" accept="image/*" style="display: none;" onchange="handleFile(this, 'photoBtn')">
+                    
+                    <button id="videoBtn" class="upload-btn" onclick="document.getElementById('videoUpload').click()">
+                        <img src="assets/video.svg" alt=""> Upload Video
+                    </button>
+                    <input type="file" id="videoUpload" accept="video/*" style="display: none;" onchange="handleFile(this, 'videoBtn')">
+                    
+                    <button id="docBtn" class="upload-btn" onclick="document.getElementById('docUpload').click()">
+                        <img src="assets/Link.svg" alt=""> Upload Doc/File
+                    </button>
+                      <input type="file" id="docUpload" accept=".pdf,.doc,.docx,.txt" style="display: none;" onchange="handleFile(this, 'docBtn')">
+                </div>
+                  <div class="file-list" id="fileContainer"></div>
+                 </div>
+                 <button class="create-wrok" disabled>Create Homework</button>
+
+              </div>
+          </div>
+      </div>
+          <div class="main-content-all">
+            <div class="user-aside">
+              <h1>GRADE 2C Students</h1>
+              <ul>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-green.svg" alt="" />
+                      <a href="#">Amir Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-pink.svg" alt="" />
+                      <a href="#">Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-red.svg" alt="" />
+                      <a href="#">Xavier Krishna Amir</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-green.svg" alt="" />
+                      <a href="#">Amir Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-pink.svg" alt="" />
+                      <a href="#">Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-red.svg" alt="" />
+                      <a href="#">Xavier Krishna Amir</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-green.svg" alt="" />
+                      <a href="#">Amir Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-pink.svg" alt="" />
+                      <a href="#">Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-red.svg" alt="" />
+                      <a href="#">Xavier Krishna Amir</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-green.svg" alt="" />
+                      <a href="#">Amir Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-pink.svg" alt="" />
+                      <a href="#">Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-red.svg" alt="" />
+                      <a href="#">Xavier Krishna Amir</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-green.svg" alt="" />
+                      <a href="#">Amir Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-pink.svg" alt="" />
+                      <a href="#">Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-red.svg" alt="" />
+                      <a href="#">Xavier Krishna Amir</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-green.svg" alt="" />
+                      <a href="#">Amir Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-pink.svg" alt="" />
+                      <a href="#">Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-red.svg" alt="" />
+                      <a href="#">Xavier Krishna Amir</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-green.svg" alt="" />
+                      <a href="#">Amir Krishna Xavier</a>
+                  </li>
+                  <li onclick="openModal('modal21')">
+                      <img src="assets/plant-pink.svg" alt="" />
+                      <a href="#">Krishna Xavier</a>
+                  </li>
+              </ul>
+          </div>
+          
+          <div class="portfolio-post">
+            <div class="post-header">
+                <h1>GRADE 2C Homeworks</h1>
+                <div class="tabs-set tabs-set1" role="tablist">
+                    <label class="tab-item">Assigned</label>
+                    <label class="tab-item">Completed</label>
+                    <label class="tab-item">Not Done</label>
+                    <label class="tab-item">Rework</label>
+                    <span class="glider-element">Assigned</span>
+                </div>
+            </div>
+            <div class="content-container content-container1">
+                <div class="tab-content active-content">
+                  <div class="cards-main">
+                    <h1 class="dates">Today, 24 Aug 2024</h1>
+                      <div class="card-col">
+                        <div class="assign-card assign-card-blue">
+                          <div class="user-profile-main">
+                            <div class="user-profile">
+                                <img src="assets/Avatar.svg" alt="avater">
+                                <ul>
+                                    <li><a>School Admin</a></li>
+                                    <li>
+                                        <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="lang">English</button>
+                          </div>
+                          <div class="teacher-info">
+                            <h1>My Favorite Animal Report</h1>
+                            <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                          </div>
+                          <div class="tech-animities">
+                            <button>
+                                <img src="assets/video.svg" alt="video">
+                                <span>My Favorite Animal Report</span>
+                            </button>
+                            <button>
+                              <img src="assets/video.svg" alt="video">
+                              <span>What it eats, and one fun fact</span>
+                          </button>
+                          <button>
+                            <img src="assets/Image_perspective.svg" alt="video">
+                            <span> Include details like where it lives,</span>
+                        </button>
+                        <button>
+                          <img src="assets/Link.svg" alt="video">
+                          <span>You can also draw a picture of the animal</span>
+                        </button>
+                          </div>
+                          <h4><i class="fa-solid fa-comment-dots"></i> 5 Updates</h4>
+                        </div>
+                        <div class="assign-card assign-card-blue">
+                          <div class="user-profile-main">
+                            <div class="user-profile">
+                                <img src="assets/Avatar.svg" alt="avater">
+                                <ul>
+                                    <li><a>School Admin</a></li>
+                                    <li>
+                                        <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="lang">English</button>
+                          </div>
+                          <div class="teacher-info">
+                            <h1>My Favorite Animal Report</h1>
+                            <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                          </div>
+                          <div class="tech-animities">
+                            <button>
+                                <img src="assets/video.svg" alt="video">
+                                <span>My Favorite Animal Report</span>
+                            </button>
+                            <button>
+                              <img src="assets/video.svg" alt="video">
+                              <span>What it eats, and one fun fact</span>
+                          </button>
+                          <button>
+                            <img src="assets/Image_perspective.svg" alt="video">
+                            <span> Include details like where it lives,</span>
+                        </button>
+                        <button>
+                          <img src="assets/Link.svg" alt="video">
+                          <span>You can also draw a picture of the animal</span>
+                        </button>
+                          </div>
+                          <h4><i class="fa-solid fa-comment-dots"></i> 5 Updates</h4>
+                        </div>
+                      </div>
+                    <div class="delete-model">
+                      <i class="fa-solid fa-ellipsis-stroke"></i>
+                      <div class="edit-card">
+                          <button onclick="openModal('modal14')" class="active-bts">Edit</button>
+                          <button onclick="openModal('modal13')">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-content">
+                  <div class="cards-main">
+                    <h1 class="dates">Today, 24 Aug 2024</h1>
+                      <div class="card-col">
+                        <div class="assign-card assign-card-green">
+                          <div class="user-profile-main">
+                            <div class="user-profile">
+                                <img src="assets/Avatar.svg" alt="avater">
+                                <ul>
+                                    <li><a>School Admin</a></li>
+                                    <li>
+                                        <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="lang">English</button>
+                          </div>
+                          <div class="teacher-info">
+                            <h1>My Favorite Animal Report</h1>
+                            <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                          </div>
+                          <div class="tech-animities">
+                            <button>
+                                <img src="assets/video.svg" alt="video">
+                                <span>My Favorite Animal Report</span>
+                            </button>
+                            <button>
+                              <img src="assets/video.svg" alt="video">
+                              <span>What it eats, and one fun fact</span>
+                          </button>
+                          <button>
+                            <img src="assets/Image_perspective.svg" alt="video">
+                            <span> Include details like where it lives,</span>
+                        </button>
+                        <button>
+                          <img src="assets/Link.svg" alt="video">
+                          <span>You can also draw a picture of the animal</span>
+                        </button>
+                          </div>
+                          <h4><i class="fa-solid fa-comment-dots"></i> 5 Updates</h4>
+                        </div>
+                        <div class="assign-card assign-card-green">
+                          <div class="user-profile-main">
+                            <div class="user-profile">
+                                <img src="assets/Avatar.svg" alt="avater">
+                                <ul>
+                                    <li><a>School Admin</a></li>
+                                    <li>
+                                        <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="lang">English</button>
+                          </div>
+                          <div class="teacher-info">
+                            <h1>My Favorite Animal Report</h1>
+                            <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                          </div>
+                          <div class="tech-animities">
+                            <button>
+                                <img src="assets/video.svg" alt="video">
+                                <span>My Favorite Animal Report</span>
+                            </button>
+                            <button>
+                              <img src="assets/video.svg" alt="video">
+                              <span>What it eats, and one fun fact</span>
+                          </button>
+                          <button>
+                            <img src="assets/Image_perspective.svg" alt="video">
+                            <span> Include details like where it lives,</span>
+                        </button>
+                        <button>
+                          <img src="assets/Link.svg" alt="video">
+                          <span>You can also draw a picture of the animal</span>
+                        </button>
+                          </div>
+                          <h4><i class="fa-solid fa-comment-dots"></i> 5 Updates</h4>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="tab-content">
+                  <div class="cards-main">
+                    <h1 class="dates">Today, 24 Aug 2024</h1>
+                      <div class="card-col">
+                        <div class="assign-card assign-card-orange">
+                          <div class="user-profile-main">
+                            <div class="user-profile">
+                                <img src="assets/Avatar.svg" alt="avater">
+                                <ul>
+                                    <li><a>School Admin</a></li>
+                                    <li>
+                                        <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="lang">English</button>
+                          </div>
+                          <div class="teacher-info">
+                            <h1>My Favorite Animal Report</h1>
+                            <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                          </div>
+                          <div class="tech-animities">
+                            <button>
+                                <img src="assets/video.svg" alt="video">
+                                <span>My Favorite Animal Report</span>
+                            </button>
+                            <button>
+                              <img src="assets/video.svg" alt="video">
+                              <span>What it eats, and one fun fact</span>
+                          </button>
+                          <button>
+                            <img src="assets/Image_perspective.svg" alt="video">
+                            <span> Include details like where it lives,</span>
+                        </button>
+                        <button>
+                          <img src="assets/Link.svg" alt="video">
+                          <span>You can also draw a picture of the animal</span>
+                        </button>
+                        <h4><i class="fa-solid fa-comment-dots"></i> 5 Updates</h4>
+                          </div>
+                        </div>
+                        <div class="assign-card assign-card-orange">
+                          <div class="user-profile-main">
+                            <div class="user-profile">
+                                <img src="assets/Avatar.svg" alt="avater">
+                                <ul>
+                                    <li><a>School Admin</a></li>
+                                    <li>
+                                        <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="lang">English</button>
+                          </div>
+                          <div class="teacher-info">
+                            <h1>My Favorite Animal Report</h1>
+                            <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                          </div>
+                          <div class="tech-animities">
+                            <button>
+                                <img src="assets/video.svg" alt="video">
+                                <span>My Favorite Animal Report</span>
+                            </button>
+                            <button>
+                              <img src="assets/video.svg" alt="video">
+                              <span>What it eats, and one fun fact</span>
+                          </button>
+                          <button>
+                            <img src="assets/Image_perspective.svg" alt="video">
+                            <span> Include details like where it lives,</span>
+                        </button>
+                        <button>
+                          <img src="assets/Link.svg" alt="video">
+                          <span>You can also draw a picture of the animal</span>
+                        </button>
+                          </div>
+                          <h4><i class="fa-solid fa-comment-dots"></i> 5 Updates</h4>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="tab-content">
+                  <div class="cards-main">
+                    <h1 class="dates">Today, 24 Aug 2024</h1>
+                      <div class="card-col">
+                        <div class="assign-card assign-card-red">
+                          <div class="user-profile-main">
+                            <div class="user-profile">
+                                <img src="assets/Avatar.svg" alt="avater">
+                                <ul>
+                                    <li><a>School Admin</a></li>
+                                    <li>
+                                        <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="lang">English</button>
+                          </div>
+                          <div class="teacher-info">
+                            <h1>My Favorite Animal Report</h1>
+                            <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                          </div>
+                          <div class="tech-animities">
+                            <button>
+                                <img src="assets/video.svg" alt="video">
+                                <span>My Favorite Animal Report</span>
+                            </button>
+                            <button>
+                              <img src="assets/video.svg" alt="video">
+                              <span>What it eats, and one fun fact</span>
+                          </button>
+                          <button>
+                            <img src="assets/Image_perspective.svg" alt="video">
+                            <span> Include details like where it lives,</span>
+                        </button>
+                        <button>
+                          <img src="assets/Link.svg" alt="video">
+                          <span>You can also draw a picture of the animal</span>
+                        </button>
+                          </div>
+                          <h4><i class="fa-solid fa-comment-dots"></i> 5 Updates</h4>
+                        </div>
+                        <div class="assign-card assign-card-red">
+                          <div class="user-profile-main">
+                            <div class="user-profile">
+                                <img src="assets/Avatar.svg" alt="avater">
+                                <ul>
+                                    <li><a>School Admin</a></li>
+                                    <li>
+                                        <span><i class="fa-light fa-map-location"></i>GRADE 2C</span> <span><i class="fa-light fa-clock"></i>14 Aug 2024</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="lang">English</button>
+                          </div>
+                          <div class="teacher-info">
+                            <h1>My Favorite Animal Report</h1>
+                            <p>Choose your favorite animal and write a short report about it. Include details like where it lives, what it eats, and one fun fact. You can also draw a picture of the animal to include with your report.</p>
+                          </div>
+                          <div class="tech-animities">
+                            <button>
+                                <img src="assets/video.svg" alt="video">
+                                <span>My Favorite Animal Report</span>
+                            </button>
+                            <button>
+                              <img src="assets/video.svg" alt="video">
+                              <span>What it eats, and one fun fact</span>
+                          </button>
+                          <button>
+                            <img src="assets/Image_perspective.svg" alt="video">
+                            <span> Include details like where it lives,</span>
+                        </button>
+                        <button>
+                          <img src="assets/Link.svg" alt="video">
+                          <span>You can also draw a picture of the animal</span>
+                        </button>
+                          </div>
+                          <h4><i class="fa-solid fa-comment-dots"></i> 5 Updates</h4>
+                        </div>
+                      </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+          </div>
+          <button onclick="openModal('modal22')" class="plus-pop"><i class="fa-light fa-plus"></i></button>
+        </main>
+      </div>
+
+    <script src="js/dashbaord.js"></script>
+    <script src="js/home-work.js"></script>
+</body>
+</html>

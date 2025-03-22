@@ -1,0 +1,1101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rak's Pallikkoodam | School 2.o for Industry 4.0</title>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="icons/css/all.min.css" />
+        <!-- css files -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+        <link rel="stylesheet" href="css/classroom.css" />
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <button class="close-btn" onclick="toggleSidebar()"><i class="fa-light fa-xmark"></i></button>
+                <div class="side-bar-header">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="logo" />
+                    </a>
+                    <h1>Class Teacher’s Classes</h1>
+                </div>
+                <ul>
+                    <h6>Active Classes</h6>
+                    <li>
+                        <a href="grade1.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Binance_coin.svg" alt="Binance_coin" />
+                                <p>GRADE 1A</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="classroom.html" class="active-nav">
+                            <div class="nav-item-na">
+                                <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective" />
+                                <p>GRADE 2C</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                                <span>2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grade3.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Solana_perspective.svg" alt="Solana_perspective" />
+                                <p>GRADE 3B</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grade4.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Tron_perspective.svg" alt="Tron_perspective" />
+                                <p>GRADE 4D</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                                <span>1</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <small>© Connected School</small>
+            </aside>
+            <main class="main-content">
+                <header class="header">
+                    <div class="header-inside">
+                        <div class="res-btn">
+                            <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fa-light fa-bars"></i></button>
+                            <div class="grade2">
+                                <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective" />
+                                <h1>GRADE 2C</h1>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="hour-glass" onclick="openModal('modal2')">
+                                <a href="#"><i class="fa-solid fa-hourglass-half"></i></a>
+                                <span>1</span>
+                            </li>
+                            <li class="bell" onclick="openModal('modal3')">
+                                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                                <span>11</span>
+                            </li>
+                            <li class="circle-question">
+                                <a href="#"><i class="fa-duotone fa-light fa-circle-question"></i></a>
+                            </li>
+                            <li class="avater" onclick="toggleDropdown(event)">
+                                <img src="assets/Avatar.svg" alt="avatar" />
+                                <i class="fa-light fa-chevron-down"></i>
+                                <form action="#" class="edit-card">
+                                    <button type="button" onclick="openModal('modal1')" class="active-bts">View Profile</button>
+                                    <button type="submit">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="header-inside-tabs">
+                        <ul>
+                            <li>
+                                <a href="classroom.html" class="active-nav"><img src="assets/Books.svg" alt="Books" />Classroom</a>
+                            </li>
+                            <li>
+                                <a href="stroy.html"><img src="assets/Fire.svg" alt="Fire" />Class Story</a>
+                            </li>
+                            <li>
+                                <a href="diary.html"><img src="assets/Message.svg" alt="Message" />Digital Diary <span>1</span></a>
+                            </li>
+                            <li>
+                                <a href="calendar.html"><img src="assets/Calendar.svg" alt="Calendar" />Calendar</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"><img src="assets/Trophy.svg" alt="Trophy" />Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="homework.html"><img src="assets/Notebook.svg" alt="Notebook" />Homework</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-content1">
+                        <span class="close-btn-mark" onclick="closeModal('modal1')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="profile-header">
+                            <h4>Teacher Profile</h4>
+                            <img src="assets/Avatar.svg" alt="avatar" />
+                            <h1>Teacher First Name</h1>
+                            <p>Teacher Last Name</p>
+                        </div>
+                        <div class="profile-body">
+                            <div class="subjects">
+                                <h1>Subjects</h1>
+                                <div class="subject-btn">
+                                    <button type="button">Mathematics</button>
+                                    <button type="button">Aptitude</button>
+                                    <button type="button">Logical Reasoning</button>
+                                </div>
+                            </div>
+                            <div class="subjects">
+                                <h1>Roles</h1>
+                                <div class="subject-btn"><button type="button">GRADE 2C - Class Teacher</button><br /></div>
+                                <div class="subject-btn">
+                                    <button type="button">GRADE 2C - Mathematics</button>
+                                    <button type="button">GRADE 5A - Aptitude</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-btn">
+                            <button onclick="closeModal('modal1')" type="submit">Need Support?</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content model-aside">
+                        <div class="m-aside-head">
+                            <h1>Portfolio: Pending Approval</h1>
+                        </div>
+                        <div class="m-aside-body">
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>2d ago</span>.<span>GRADE 2D</span></li>
+                                </ul>
+                                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                                </ul>
+                                <img src="assets/student-3.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>5d ago</span>.<span>GRADE 3C</span></li>
+                                </ul>
+                                <img src="assets/student-4.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>3d ago</span>.<span>GRADE 1A</span></li>
+                                </ul>
+                                <img src="assets/student-1.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                        </div>
+                        <div class="m-aside-ft">
+                            <p>See All Pending Posts</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+                    <div class="modal-content model-aside">
+                        <div class="m-aside-head">
+                            <h1>Notifications</h1>
+                        </div>
+                        <div class="m-aside-body">
+                            <div class="aside-pendings">
+                                <img src="assets/Message.svg" class="Trophy" alt="Message" />
+                                <ul>
+                                    <h1><a href="#">1 New Message for Student Name!</a></h1>
+                                    <li>Student: Hi mam. What is the...</li>
+                                    <li><span>13h ago</span>.<span>GRADE 2C</span></li>
+                                </ul>
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Fire.svg" class="Trophy" alt="Fire" />
+                                <ul>
+                                    <h1><a href="#">Student liked your photo on Class Story!</a></h1>
+                                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                                </ul>
+                                <img src="assets/student-5.png" class="aside-stuednts" alt="student-5" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                                </ul>
+                                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Notebook.svg" class="Trophy" alt="Notebook" />
+                                <ul>
+                                    <h1><a href="#">1 new update in Homework</a></h1>
+                                    <li>Student: Need Help</li>
+                                    <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m-aside-ft">
+                            <span class="x-btn-mark"><i class="fa-solid fa-xmark"></i></span>
+                            <p>Clear All Notifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal4" class="modal">
+                    <div class="modal-content modal-content4">
+                        <span class="close-btn-mark" onclick="closeModal('modal4')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                        <div class="valuation-main">
+                            <div class="valuation-left">
+                                <div class="main-info">
+                                    <div class="val-card2">
+                                        <img id="modal-img" src="" class="modal-image" alt="Modal Image" />
+                                        <h1>First Name</h1>
+                                        <p>Last Name</p>
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                                <a href="#">
+                                    <img src="assets/Message.svg" alt="Message" />
+                                    Message First Name
+                                </a>
+                            </div>
+                            <div class="valuation-right">
+                                <h1>Overall valuation for First Name</h1>
+                                <div class="tab-container">
+                                    <div class="tabs-set tabs-set2" role="tablist">
+                                        <label class="tab-item">Positive</label>
+                                        <label class="tab-item">Needs work</label>
+                                        <span class="glider-element">Positive</span>
+                                    </div>
+                                    <div class="content-container content-container2">
+                                        <div class="tab-content tab-content4 active-content">
+                                            <div class="val-mian">
+                                                <div class="val-card">
+                                                    <img src="assets/team-work.svg" alt="team-work" />
+                                                    <h2>Team work</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/attention.svg" alt="attention" />
+                                                    <h2>Attention</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/punctual.svg" alt="punctual" />
+                                                    <h2>Punctual</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/fitness.svg" alt="fitness" />
+                                                    <h2>Fitness</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/calculations.svg" alt="calculations" />
+                                                    <h2>Calculations</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/activities.svg" alt="activities" />
+                                                    <h2>Activities</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="plus-val-card">
+                                                    <i onclick="openModal('modal6')" class="fa-light fa-plus"></i>
+                                                    <h2>Edit Skills</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content tab-content4">
+                                            <div class="val-mian val-mian2">
+                                                <div class="val-card">
+                                                    <img src="assets/team-work.svg" alt="team-work" />
+                                                    <h2>Team work</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/attention.svg" alt="attention" />
+                                                    <h2>Attention</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/punctual.svg" alt="punctual" />
+                                                    <h2>Punctual</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/fitness.svg" alt="fitness" />
+                                                    <h2>Fitness</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/calculations.svg" alt="calculations" />
+                                                    <h2>Calculations</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/activities.svg" alt="activities" />
+                                                    <h2>Activities</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="plus-val-card">
+                                                    <i onclick="openModal('modal6')" class="fa-light fa-plus"></i>
+                                                    <h2>Edit Skills</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal5" class="modal">
+                    <div class="modal-content modal-content5">
+                        <span class="close-btn-mark" onclick="closeModal('modal5')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                        <div class="valuation-main">
+                            <div class="valuation-right valuation-right2">
+                                <h1>Overall valuation for GRADE 2C (7 Students)</h1>
+                                <div class="tab-container">
+                                    <div class="tabs-set tabs-set3" role="tablist">
+                                        <label class="tab-item">Positive</label>
+                                        <label class="tab-item">Needs work</label>
+                                        <span class="glider-element">Positive</span>
+                                    </div>
+                                    <div class="content-container content-container3">
+                                        <div class="tab-content tab-content5 active-content">
+                                            <div class="val-mian">
+                                                <div class="val-card">
+                                                    <img src="assets/team-work.svg" alt="team-work" />
+                                                    <h2>Team work</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/attention.svg" alt="attention" />
+                                                    <h2>Attention</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/punctual.svg" alt="punctual" />
+                                                    <h2>Punctual</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/fitness.svg" alt="fitness" />
+                                                    <h2>Fitness</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/calculations.svg" alt="calculations" />
+                                                    <h2>Calculations</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/activities.svg" alt="activities" />
+                                                    <h2>Activities</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="plus-val-card">
+                                                    <i onclick="openModal('modal6')" class="fa-light fa-plus"></i>
+                                                    <h2>Edit Skills</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content tab-content4">
+                                            <div class="val-mian val-mian2">
+                                                <div class="val-card">
+                                                    <img src="assets/team-work.svg" alt="team-work" />
+                                                    <h2>Team work</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/attention.svg" alt="attention" />
+                                                    <h2>Attention</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/punctual.svg" alt="punctual" />
+                                                    <h2>Punctual</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/fitness.svg" alt="fitness" />
+                                                    <h2>Fitness</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/calculations.svg" alt="calculations" />
+                                                    <h2>Calculations</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/activities.svg" alt="activities" />
+                                                    <h2>Activities</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="plus-val-card">
+                                                    <i onclick="openModal('modal6')" class="fa-light fa-plus"></i>
+                                                    <h2>Edit Skills</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="announcement">
+                                    <img src="assets/speaker.svg" alt="speaker" />
+                                    Got an Announcement?
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal7" class="modal">
+                    <div class="modal-content modal-content7">
+                        <span class="close-btn-mark" onclick="closeModal('modal7')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                        <div class="edit-validation">
+                            <h1>
+                                Quiz Group (7 Students)<span onclick="openModal('modal10'); closeModal('modal7')" class="edit-btn"><i class="fa-solid fa-pen"></i></span>
+                            </h1>
+                            <div class="student-card-main student-card-main7">
+                                <div class="s-card-bg" onclick="openModal('modal8'); closeModal('modal7');">
+                                    <img src="assets/plant-green.svg" class="plant-green" alt="plant-green" />
+                                    <h1>First Name</h1>
+                                    <p>Last Name</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="s-card-bg" onclick="openModal('modal8'); closeModal('modal7');">
+                                    <img src="assets/plant-pink.svg" class="plant-pink" alt="plant-pink" />
+                                    <h1>First Name</h1>
+                                    <p>Last Name</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="s-card-bg" onclick="openModal('modal8'); closeModal('modal7');">
+                                    <img src="assets/empty-golden.svg" class="empty-golden" alt="empty-golden" />
+                                    <h1>First Name</h1>
+                                    <p>Last Name</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="s-card-bg" onclick="openModal('modal8'); closeModal('modal7');">
+                                    <img src="assets/plant-red.svg" class="plant-red" alt="plant-red" />
+                                    <h1>First Name</h1>
+                                    <p>Last Name</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="s-card-bg" onclick="openModal('modal8'); closeModal('modal7');">
+                                    <img src="assets/plant-pink2.svg" class="plant-pink2" alt="plant-red" />
+                                    <h1>First Name</h1>
+                                    <p>Last Name</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="s-card-bg" onclick="openModal('modal8'); closeModal('modal7');">
+                                    <img src="assets/empty-blue.svg" class="empty-blue" alt="empty-blue" />
+                                    <h1>First Name</h1>
+                                    <p>Last Name</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="s-card-bg" onclick="openModal('modal8'); closeModal('modal7');">
+                                    <img src="assets/plant-light.svg" class="plant-light" alt="plant-light" />
+                                    <h1>First Name</h1>
+                                    <p>Last Name</p>
+                                    <span>2</span>
+                                </div>
+                            </div>
+                            <div class="valid-btn7">
+                                <button type="button" onclick="closeModal('modal7')"><img src="assets/star.svg" alt="star" />Appraise Quiz Group</button>
+                                <a href="#">
+                                    <img src="assets/Message.svg" alt="Message" />
+                                    Message Quiz Group
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal8" class="modal">
+                    <div class="modal-content modal-content5">
+                        <span class="prev-model" onclick="closeModal('modal8'),openModal('modal7');">
+                            <i class="fa-regular fa-angle-left"></i>
+                        </span>
+                        <span class="close-btn-mark" onclick="closeModal('modal8')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                        <div class="valuation-main">
+                            <div class="valuation-right valuation-right2">
+                                <h1>Overall valuation for GRADE 2C (7 Students)</h1>
+                                <div class="tab-container">
+                                    <div class="tabs-set tabs-set4" role="tablist">
+                                        <label class="tab-item">Positive</label>
+                                        <label class="tab-item">Needs work</label>
+                                        <span class="glider-element">Positive</span>
+                                    </div>
+                                    <div class="content-container content-container4">
+                                        <div class="tab-content tab-content5 active-content">
+                                            <div class="val-mian">
+                                                <div class="val-card">
+                                                    <img src="assets/team-work.svg" alt="team-work" />
+                                                    <h2>Team work</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/attention.svg" alt="attention" />
+                                                    <h2>Attention</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/punctual.svg" alt="punctual" />
+                                                    <h2>Punctual</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/fitness.svg" alt="fitness" />
+                                                    <h2>Fitness</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/calculations.svg" alt="calculations" />
+                                                    <h2>Calculations</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/activities.svg" alt="activities" />
+                                                    <h2>Activities</h2>
+                                                    <span>1</span>
+                                                </div>
+                                                <div class="plus-val-card">
+                                                    <i onclick="openModal('modal6')" class="fa-light fa-plus"></i>
+                                                    <h2>Edit Skills</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content tab-content4">
+                                            <div class="val-mian val-mian2">
+                                                <div class="val-card">
+                                                    <img src="assets/team-work.svg" alt="team-work" />
+                                                    <h2>Team work</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/attention.svg" alt="attention" />
+                                                    <h2>Attention</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/punctual.svg" alt="punctual" />
+                                                    <h2>Punctual</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/fitness.svg" alt="fitness" />
+                                                    <h2>Fitness</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/calculations.svg" alt="calculations" />
+                                                    <h2>Calculations</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="val-card">
+                                                    <img src="assets/activities.svg" alt="activities" />
+                                                    <h2>Activities</h2>
+                                                    <span>-1</span>
+                                                </div>
+                                                <div class="plus-val-card">
+                                                    <i onclick="openModal('modal6')" class="fa-light fa-plus"></i>
+                                                    <h2>Edit Skills</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal9" class="modal">
+                  <div class="modal-content modal-content9">
+                      <span class="close-btn-mark" onclick="closeModal('modal9')">
+                          <i class="fa-solid fa-xmark"></i>
+                      </span>
+                      <div class="edit-validation">
+                        <h1>
+                          Create New Group
+                        </h1>
+                        <div class="add-group-main">
+                          <div class="dropdown2">
+                            <button class="dropdown-btn2">
+                                <div class="res-img">
+                                    <img src="assets/Avatar.svg" alt="Selected" class="selected-img2">
+                                </div>
+                                <span class="arrow2"><i class="fa-regular fa-angle-down"></i></span>
+                            </button>
+                            <div class="dropdown-content2">
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar.svg" alt="Option 1">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (0).svg" alt="Option 2">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (1).svg" alt="Option 3">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (2).svg" alt="Option 4">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (3).svg" alt="Option 5">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (4).svg" alt="Option 6">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (5).svg" alt="Option 7">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (6).svg" alt="Option 8">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (7).svg" alt="Option 9">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (8).svg" alt="Option 10">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (9).svg" alt="Option 11">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (10).svg" alt="Option 12">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (11).svg" alt="Option 13">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (12).svg" alt="Option 14">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar.svg" alt="Option 15">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (13).svg" alt="Option 16">
+                                </div>
+                                <div class="dropdown-item2">
+                                    <img src="assets/Avatar (4).svg" alt="Option 17">
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                          <div class="input-group2">
+                            <label for="name">Group Name</label>
+                            <input type="text" id="name" name="name" placeholder="Enter Group Name">
+                          </div>
+                        </form>
+                        </div>
+                        <div class="student-card-main student-card-main9">
+                          <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal9');">
+                              <img src="assets/plant-green.svg" class="plant-green" alt="plant-green">
+                              <h1>First Name</h1>
+                              <p>Last Name</p>
+                              <span><i class="fa-solid fa-check"></i></span>
+                          </div>
+                          <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal9');">
+                              <img src="assets/plant-pink.svg" class="plant-pink" alt="plant-pink">
+                              <h1>First Name</h1>
+                              <p>Last Name</p>
+                              <span><i class="fa-solid fa-check"></i></span>
+                          </div>
+                          <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal9');">
+                              <img src="assets/plant-red.svg" class="plant-red" alt="plant-red">
+                              <h1>First Name</h1>
+                              <p>Last Name</p>
+                              <span><i class="fa-solid fa-check"></i></span>
+                          </div>
+                          <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal9');">
+                              <img src="assets/plant-pink2.svg" class="plant-pink2" alt="plant-red">
+                              <h1>First Name</h1>
+                              <p>Last Name</p>
+                              <span><i class="fa-solid fa-check"></i></span>
+                          </div>
+                          <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal9');">
+                              <img src="assets/plant-light.svg" class="plant-light" alt="plant-light">
+                              <h1>First Name</h1>
+                              <p>Last Name</p>
+                              <span><i class="fa-solid fa-check"></i></span>
+                          </div>
+                          <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal9');">
+                            <img src="assets/plant-green.svg" class="plant-green" alt="plant-green">
+                            <h1>First Name</h1>
+                            <p>Last Name</p>
+                            <span><i class="fa-solid fa-check"></i></span>
+                        </div>
+                      </div>
+                        <div class="valid-btn9">
+                            <button type="button" onclick="closeModal('modal9')">Cancel</button>
+                            <button type="button" onclick="closeModal('modal9')">Create Group</button>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="modal10" class="modal">
+                <div class="modal-content modal-content9">
+                    <span class="close-btn-mark" onclick="closeModal('modal10')">
+                        <i class="fa-solid fa-xmark"></i>
+                    </span>
+                    <div class="edit-validation">
+                      <h1>
+                        Edit Group
+                      </h1>
+                      <div class="add-group-main">
+                        <div class="dropdown2">
+                          <button class="dropdown-btn2">
+                              <div class="res-img">
+                                  <img src="assets/Avatar.svg" alt="Selected" class="selected-img2">
+                              </div>
+                              <span class="arrow2"><i class="fa-regular fa-angle-down"></i></span>
+                          </button>
+                          <div class="dropdown-content2">
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar.svg" alt="Option 1">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (0).svg" alt="Option 2">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (1).svg" alt="Option 3">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (2).svg" alt="Option 4">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (3).svg" alt="Option 5">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (4).svg" alt="Option 6">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (5).svg" alt="Option 7">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (6).svg" alt="Option 8">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (7).svg" alt="Option 9">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (8).svg" alt="Option 10">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (9).svg" alt="Option 11">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (10).svg" alt="Option 12">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (11).svg" alt="Option 13">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (12).svg" alt="Option 14">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar.svg" alt="Option 15">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (13).svg" alt="Option 16">
+                              </div>
+                              <div class="dropdown-item2">
+                                  <img src="assets/Avatar (4).svg" alt="Option 17">
+                              </div>
+                          </div>
+                      </div>
+                      <form>
+                        <div class="input-group2">
+                          <label for="name">Group Name</label>
+                          <input type="text" id="name" name="name" placeholder="Quiz Group">
+                        </div>
+                      </form>
+                      </div>
+                      <div class="student-card-main student-card-main9">
+                        <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal10');">
+                            <img src="assets/plant-green.svg" class="plant-green" alt="plant-green">
+                            <h1>First Name</h1>
+                            <p>Last Name</p>
+                            <span><i class="fa-solid fa-check"></i></span>
+                        </div>
+                        <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal10');">
+                            <img src="assets/plant-pink.svg" class="plant-pink" alt="plant-pink">
+                            <h1>First Name</h1>
+                            <p>Last Name</p>
+                            <span><i class="fa-solid fa-check"></i></span>
+                        </div>
+                        <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal10');">
+                            <img src="assets/plant-red.svg" class="plant-red" alt="plant-red">
+                            <h1>First Name</h1>
+                            <p>Last Name</p>
+                            <span><i class="fa-solid fa-check"></i></span>
+                        </div>
+                        <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal10');">
+                            <img src="assets/plant-pink2.svg" class="plant-pink2" alt="plant-red">
+                            <h1>First Name</h1>
+                            <p>Last Name</p>
+                            <span><i class="fa-solid fa-check"></i></span>
+                        </div>
+                        <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal10');">
+                            <img src="assets/plant-light.svg" class="plant-light" alt="plant-light">
+                            <h1>First Name</h1>
+                            <p>Last Name</p>
+                            <span><i class="fa-solid fa-check"></i></span>
+                        </div>
+                        <div class="s-card-bg" onclick="openModal('modal7'); closeModal('modal10');">
+                          <img src="assets/plant-green.svg" class="plant-green" alt="plant-green">
+                          <h1>First Name</h1>
+                          <p>Last Name</p>
+                          <span><i class="fa-solid fa-check"></i></span>
+                      </div>
+                    </div>
+                      <div class="valid-btn9 valid-btn10">
+                          <button type="button" onclick="openModal('modal11')">Delete</button>
+                          <button type="button" onclick="closeModal('modal10')">Save Changes</button>
+                      </div>
+                  </div>
+                </div>
+                </div>
+                <div id="modal11" class="modal">
+              <div class="modal-content modal-content11">
+                  <span class="close-btn-mark" onclick="closeModal('modal11')">
+                      <i class="fa-solid fa-xmark"></i>
+                  </span>
+                  <div class="edit-validation">
+                    <h1>
+                      Delete this group?
+                    </h1>
+                    <div class="delete-message">
+                      <p>Are you sure you want to delete this group?</p>
+                      <p>This can't be undone.</p>
+                    </div>
+                    <div class="valid-btn9 valid-btn11">
+                        <button type="button" onclick="closeModal('modal11'); closeModal('modal10')">Delete</button>
+                        <button type="button" onclick="closeModal('modal11'); closeModal('modal10')">Save Changes</button>
+                    </div>
+                </div>
+              </div>
+                </div>
+                <div id="modal6" class="modal">
+                    <div class="modal-content modal-content6">
+                        <span class="close-btn-mark" onclick="closeModal('modal6')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                        <div class="edit-validation">
+                            <h1>Edit Valuation</h1>
+                            <div class="dropdown">
+                                <button class="dropdown-btn">
+                                    <div class="res-img">
+                                        <img src="assets/team-work.svg" alt="Selected" class="selected-img" />
+                                    </div>
+                                    <span class="arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                </button>
+                                <div class="dropdown-content">
+                                    <div class="dropdown-item">
+                                        <img src="assets/calculations.svg" alt="Option 1" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/fitness.svg" alt="Option 2" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/team-work.svg" alt="Option 3" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/attention.svg" alt="Option 4" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/punctual.svg" alt="Option 5" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/activities.svg" alt="Option 6" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/activities.svg" alt="Option 7" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/calculations.svg" alt="Option 8" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/attention.svg" alt="Option 9" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/punctual.svg" alt="Option 10" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/team-work.svg" alt="Option 11" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/fitness.svg" alt="Option 12" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/punctual.svg" alt="Option 13" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/team-work.svg" alt="Option 14" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/attention.svg" alt="Option 15" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/fitness.svg" alt="Option 16" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/calculations.svg" alt="Option 17" />
+                                    </div>
+                                    <div class="dropdown-item">
+                                        <img src="assets/activities.svg" alt="Option 18" />
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <div class="input-group">
+                                    <label for="Name">Name</label>
+                                    <input type="text" id="Name" name="attention" placeholder="Attention" />
+                                </div>
+                                <div class="input-group">
+                                    <label>Points</label>
+                                    <div class="custom-select">
+                                        <span class="select-text">0</span>
+                                        <span class="arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                        <ul class="options">
+                                            <li class="option">1</li>
+                                            <li class="option">2</li>
+                                            <li class="option">3</li>
+                                            <li class="option">4</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="valid-btn">
+                                    <button type="button" onclick="closeModal('modal6')">Cancel</button>
+                                    <button type="button" onclick="closeModal('modal6')">Save</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-all">
+                    <div class="tab-container">
+                        <div class="tabs-set tabs-set1" role="tablist">
+                            <label class="tab-item">Students</label>
+                            <label class="tab-item">Groups</label>
+                            <span class="glider-element">Students</span>
+                        </div>
+                        <div class="content-container content-container1">
+                            <div class="tab-content active-content">
+                                <div onclick="openModal('modal5')" class="s-card-bg s-card-bg2">
+                                    <div class="plants-groupt">
+                                        <img src="assets/plant-light.svg" class="plant-light" alt="plant-light" />
+                                        <img src="assets/plant-green.svg" class="plant-green" alt="plant-green" />
+                                        <img src="assets/plant-pink.svg" class="plant-pink" alt="plant-pink" />
+                                        <img src="assets/plant-red.svg" class="plant-red" alt="plant-red" />
+                                        <img src="assets/plant-pink2.svg" class="plant-pink2" alt="plant-red" />
+                                        <img src="assets/plant-green.svg" class="plant-green2" alt="plant-green" />
+                                    </div>
+                                    <h1>Whole Class</h1>
+                                    <p>7 Students</p>
+                                    <span>2</span>
+                                </div>
+                                <div class="student-card-main">
+                                    <div class="s-card-bg" onclick="openModal('modal4', 'assets/plant-green.svg')">
+                                        <img src="assets/plant-green.svg" class="plant-green" alt="plant-green" />
+                                        <h1>First Name</h1>
+                                        <p>Last Name</p>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="s-card-bg" onclick="openModal('modal4', 'assets/plant-pink.svg')">
+                                        <img src="assets/plant-pink.svg" class="plant-pink" alt="plant-pink" />
+                                        <h1>First Name</h1>
+                                        <p>Last Name</p>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="s-card-bg" onclick="openModal('modal4', 'assets/empty-golden.svg')">
+                                        <img src="assets/empty-golden.svg" class="empty-golden" alt="empty-golden" />
+                                        <h1>First Name</h1>
+                                        <p>Last Name</p>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="s-card-bg" onclick="openModal('modal4', 'assets/plant-red.svg')">
+                                        <img src="assets/plant-red.svg" class="plant-red" alt="plant-red" />
+                                        <h1>First Name</h1>
+                                        <p>Last Name</p>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="s-card-bg" onclick="openModal('modal4', 'assets/plant-pink2.svg')">
+                                        <img src="assets/plant-pink2.svg" class="plant-pink2" alt="plant-red" />
+                                        <h1>First Name</h1>
+                                        <p>Last Name</p>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="s-card-bg" onclick="openModal('modal4', 'assets/empty-blue.svg')">
+                                        <img src="assets/empty-blue.svg" class="empty-blue" alt="empty-blue" />
+                                        <h1>First Name</h1>
+                                        <p>Last Name</p>
+                                        <span>2</span>
+                                    </div>
+                                    <div class="s-card-bg" onclick="openModal('modal4', 'assets/plant-light.svg')">
+                                        <img src="assets/plant-light.svg" class="plant-light" alt="plant-light" />
+                                        <h1>First Name</h1>
+                                        <p>Last Name</p>
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-content">
+                                <div class="groups-main">
+                                    <div onclick="openModal('modal7')" class="s-card-bg s-card-bg2">
+                                        <div class="plants-groupt">
+                                            <img src="assets/plant-light.svg" class="plant-light" alt="plant-light" />
+                                            <img src="assets/plant-green.svg" class="plant-green" alt="plant-green" />
+                                            <img src="assets/plant-pink.svg" class="plant-pink" alt="plant-pink" />
+                                            <img src="assets/plant-red.svg" class="plant-red" alt="plant-red" />
+                                            <img src="assets/plant-pink2.svg" class="plant-pink2" alt="plant-red" />
+                                            <img src="assets/plant-green.svg" class="plant-green2" alt="plant-green" />
+                                        </div>
+                                        <h1>Quiz Group</h1>
+                                        <p>7 Students</p>
+                                        <span>2</span>
+                                    </div>
+                                    <div onclick="openModal('modal7')" class="s-card-bg s-card-bg2 s-card-bg3">
+                                        <div class="plants-groupt">
+                                            <img src="assets/plant-light.svg" class="plant-light" alt="plant-light" />
+                                            <img src="assets/plant-green.svg" class="plant-green" alt="plant-green" />
+                                            <img src="assets/plant-pink.svg" class="plant-pink" alt="plant-pink" />
+                                            <img src="assets/plant-pink2.svg" class="plant-pink3" alt="plant-red" />
+                                            <img src="assets/plant-green.svg" class="plant-green3" alt="plant-green" />
+                                        </div>
+                                        <h1>English Essay Group</h1>
+                                        <p>5 Students</p>
+                                        <span>2</span>
+                                    </div>
+                                </div>
+                                <button onclick="openModal('modal9')" class="plus-pop"><i class="fa-light fa-plus"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/dashbaord.js"></script>
+        <script src="js/classroom.js"></script>
+    </body>
+</html>

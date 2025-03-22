@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rak's Pallikkoodam | School 2.o for Industry 4.0</title>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="icons/css/all.min.css" />
+        <!-- css files -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+        <link rel="stylesheet" href="css/calender.css" />
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <button class="close-btn" onclick="toggleSidebar()"><i class="fa-light fa-xmark"></i></button>
+                <div class="side-bar-header">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="logo" />
+                    </a>
+                    <h1>Class Teacher’s Classes</h1>
+                </div>
+                <ul>
+                    <h6>Active Classes</h6>
+                    <li>
+                        <a href="grade1.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Binance_coin.svg" alt="Binance_coin" />
+                                <p>GRADE 1A</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="classroom.html" class="active-nav">
+                            <div class="nav-item-na">
+                                <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective" />
+                                <p>GRADE 2C</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                                <span>2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grade3.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Solana_perspective.svg" alt="Solana_perspective" />
+                                <p>GRADE 3B</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grade4.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Tron_perspective.svg" alt="Tron_perspective" />
+                                <p>GRADE 4D</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                                <span>1</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <small>© Connected School</small>
+            </aside>
+            <main class="main-content">
+                <header class="header">
+                    <div class="header-inside">
+                        <div class="res-btn">
+                            <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fa-light fa-bars"></i></button>
+                            <div class="grade2">
+                                <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective" />
+                                <h1>GRADE 2C</h1>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="hour-glass" onclick="openModal('modal2')">
+                                <a href="#"><i class="fa-solid fa-hourglass-half"></i></a>
+                                <span>1</span>
+                            </li>
+                            <li class="bell" onclick="openModal('modal3')">
+                                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                                <span>11</span>
+                            </li>
+                            <li class="circle-question">
+                                <a href="#"><i class="fa-duotone fa-light fa-circle-question"></i></a>
+                            </li>
+                            <li class="avater" onclick="toggleDropdown(event)">
+                                <img src="assets/Avatar.svg" alt="avatar" />
+                                <i class="fa-light fa-chevron-down"></i>
+                                <form action="#" class="edit-card">
+                                    <button type="button" onclick="openModal('modal1')" class="active-bts">View Profile</button>
+                                    <button type="submit">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-inside-tabs">
+                        <ul>
+                            <li>
+                                <a href="classroom.html"><img src="assets/Books.svg" alt="Books" />Classroom</a>
+                            </li>
+                            <li>
+                                <a href="stroy.html"><img src="assets/Fire.svg" alt="Fire" />Class Story</a>
+                            </li>
+                            <li>
+                                <a href="diary.html"><img src="assets/Message.svg" alt="Message" />Digital Diary <span>1</span></a>
+                            </li>
+                            <li>
+                                <a href="calendar.html" class="active-nav"><img src="assets/Calendar.svg" alt="Calendar" />Calendar <span>4</span></a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"><img src="assets/Trophy.svg" alt="Trophy" />Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="homework.html"><img src="assets/Notebook.svg" alt="Notebook" />Homework</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-content1">
+                        <span class="close-btn-mark" onclick="closeModal('modal1')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="profile-header">
+                            <h4>Teacher Profile</h4>
+                            <img src="assets/Avatar.svg" alt="avatar" />
+                            <h1>Teacher First Name</h1>
+                            <p>Teacher Last Name</p>
+                        </div>
+                        <div class="profile-body">
+                            <div class="subjects">
+                                <h1>Subjects</h1>
+                                <div class="subject-btn">
+                                    <button type="button">Mathematics</button>
+                                    <button type="button">Aptitude</button>
+                                    <button type="button">Logical Reasoning</button>
+                                </div>
+                            </div>
+                            <div class="subjects">
+                                <h1>Roles</h1>
+                                <div class="subject-btn"><button type="button">GRADE 2C - Class Teacher</button><br /></div>
+                                <div class="subject-btn">
+                                    <button type="button">GRADE 2C - Mathematics</button>
+                                    <button type="button">GRADE 5A - Aptitude</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-btn">
+                            <button onclick="closeModal('modal1')" type="submit">Need Support?</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content model-aside">
+                        <div class="m-aside-head">
+                            <h1>Portfolio: Pending Approval</h1>
+                        </div>
+                        <div class="m-aside-body">
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>2d ago</span>.<span>GRADE 2D</span></li>
+                                </ul>
+                                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                                </ul>
+                                <img src="assets/student-3.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>5d ago</span>.<span>GRADE 3C</span></li>
+                                </ul>
+                                <img src="assets/student-4.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>3d ago</span>.<span>GRADE 1A</span></li>
+                                </ul>
+                                <img src="assets/student-1.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                        </div>
+                        <div class="m-aside-ft">
+                            <p>See All Pending Posts</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+                    <div class="modal-content model-aside">
+                        <div class="m-aside-head">
+                            <h1>Notifications</h1>
+                        </div>
+                        <div class="m-aside-body">
+                            <div class="aside-pendings">
+                                <img src="assets/Message.svg" class="Trophy" alt="Message" />
+                                <ul>
+                                    <h1><a href="#">1 New Message for Student Name!</a></h1>
+                                    <li>Student: Hi mam. What is the...</li>
+                                    <li><span>13h ago</span>.<span>GRADE 2C</span></li>
+                                </ul>
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Fire.svg" class="Trophy" alt="Fire" />
+                                <ul>
+                                    <h1><a href="#">Student liked your photo on Class Story!</a></h1>
+                                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                                </ul>
+                                <img src="assets/student-5.png" class="aside-stuednts" alt="student-5" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                                </ul>
+                                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Notebook.svg" class="Trophy" alt="Notebook" />
+                                <ul>
+                                    <h1><a href="#">1 new update in Homework</a></h1>
+                                    <li>Student: Need Help</li>
+                                    <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m-aside-ft">
+                            <span class="x-btn-mark"><i class="fa-solid fa-xmark"></i></span>
+                            <p>Clear All Notifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal14" class="modal">
+                    <div class="modal-content modal-content11">
+                        <span class="close-btn-mark" onclick="closeModal('modal14')">
+                            <i class="fa-solid fa-xmark"></i>
+                        </span>
+                        <div class="edit-validation">
+                            <h1>
+                                Delete this group?
+                            </h1>
+                            <div class="delete-message">
+                                <p>Are you sure you want to delete this group?</p>
+                                <p>This can't be undone.</p>
+                            </div>
+                            <div class="valid-btn9 valid-btn11">
+                                <button type="button" onclick="closeModal('modal14')">Cancel</button>
+                                <button type="button" onclick="closeModal('modal14'); showDefaultDiv()">Delete Post</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-all">
+                    <div class="event-container">
+                        <div id="defaultDiv" class="box box1">
+                            <div class="new-events-main">
+                                <div class="event-name">
+                                    <img src="assets/Calendar.svg" alt="calendar" />
+                                    <h1>This Week’s Events</h1>
+                                </div>
+                                <div class="new-event-card">
+                                    <div class="new-event-banner">
+                                        <img src="assets/emojies-group.svg" alt="emojies-group" />
+                                    </div>
+                                    <div class="new-event-detail">
+                                        <div class="event-time">
+                                            <div class="dates-ev">
+                                                <h1>24</h1>
+                                                <p>Aug 2024</p>
+                                            </div>
+                                            <div class="event-time-right">
+                                                <p>Saturday</p>
+                                                <h1>Quiz Competition</h1>
+                                                <h2><i class="fa-solid fa-alarm-clock"></i>24 Aug, 12:46 pm</h2>
+                                                <h4><i class="fa-solid fa-file-lines"></i>field trip to Munnar</h4>
+                                                <a href="#"><i class="fa-light fa-link"></i>location link</a>
+                                            </div>
+                                        </div>
+                                        <button onclick="showEditDiv()"><i class="fa-solid fa-pen"></i></button>
+                                    </div>
+                                </div>
+                                <div class="new-event-card">
+                                    <div class="new-event-banner">
+                                        <img src="assets/emojies-group.svg" alt="emojies-group" />
+                                    </div>
+                                    <div class="new-event-detail">
+                                        <div class="event-time">
+                                            <div class="dates-ev">
+                                                <h1>30</h1>
+                                                <p>Aug 2024</p>
+                                            </div>
+                                            <div class="event-time-right">
+                                                <p>Saturday</p>
+                                                <h1>Quiz Competition</h1>
+                                                <h2><i class="fa-solid fa-alarm-clock"></i>24 Aug, 12:46 pm</h2>
+                                                <h4><i class="fa-solid fa-file-lines"></i>field trip to Munnar</h4>
+                                                <a href="#"><i class="fa-light fa-link"></i>location link</a>
+                                            </div>
+                                        </div>
+                                        <button onclick="showEditDiv()"><i class="fa-solid fa-pen"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="new-events-main">
+                                <div class="event-name">
+                                    <img src="assets/Calendar.svg" alt="calendar" />
+                                    <h1>Upcoming Events</h1>
+                                </div>
+                                <div class="new-event-card">
+                                    <div class="new-event-banner">
+                                        <img src="assets/emojies-group.svg" alt="emojies-group" />
+                                    </div>
+                                    <div class="new-event-detail">
+                                        <div class="event-time">
+                                            <div class="dates-ev">
+                                                <h1>24</h1>
+                                                <p>Aug 2024</p>
+                                            </div>
+                                            <div class="event-time-right">
+                                                <p>Saturday</p>
+                                                <h1>Quiz Competition</h1>
+                                                <h2><i class="fa-solid fa-alarm-clock"></i>24 Aug, 12:46 pm</h2>
+                                                <h4><i class="fa-solid fa-file-lines"></i>field trip to Munnar</h4>
+                                                <a href="#"><i class="fa-light fa-link"></i>location link</a>
+                                            </div>
+                                        </div>
+                                        <button onclick="showEditDiv()"><i class="fa-solid fa-pen"></i></button>
+                                    </div>
+                                </div>
+                                <div class="new-event-card">
+                                    <div class="new-event-banner">
+                                        <img src="assets/emojies-group.svg" alt="emojies-group" />
+                                    </div>
+                                    <div class="new-event-detail">
+                                        <div class="event-time">
+                                            <div class="dates-ev">
+                                                <h1>30</h1>
+                                                <p>Aug 2024</p>
+                                            </div>
+                                            <div class="event-time-right">
+                                                <p>Saturday</p>
+                                                <h1>Quiz Competition</h1>
+                                                <h2><i class="fa-solid fa-alarm-clock"></i>24 Aug, 12:46 pm</h2>
+                                                <h4><i class="fa-solid fa-file-lines"></i>field trip to Munnar</h4>
+                                                <a href="#"><i class="fa-light fa-link"></i>location link</a>
+                                            </div>
+                                        </div>
+                                        <button onclick="showEditDiv()"><i class="fa-solid fa-pen"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="eventDiv" class="box">
+                            <div class="add-event-main">
+                                <button class="btn btn-secondary" onclick="showDefaultDiv()"><i class="fa-regular fa-angle-left"></i></button>
+                                <h1>Create New Event</h1>
+                            </div>
+                            <div class="new-events-main">
+                                <div class="uploader main-uploader">
+                                    <h2 class="uploadText"><i class="fa-regular fa-cloud-arrow-up"></i> Upload Event Banner</h2>
+                                    <input type="file" class="fileInput main-file" accept="image/*" />
+                                    <div class="preview"></div>
+                                </div>
+                                <form>
+                                    <div class="input-groups">
+                                        <label for="title">Title</label>
+                                        <input type="text" id="title" name="title" placeholder="Enter Title of the event" />
+                                    </div>
+                                    <div class="input-groups">
+                                        <label for="description">Description</label>
+                                        <textarea id="description" name="description" placeholder="Add Description of the event"></textarea>
+                                    </div>
+                                    <div class="input-groups">
+                                        <label>Select Class</label>
+                                        <div class="custom-select custom-select1">
+                                            <span class="select-text">GRADE 2C</span>
+                                            <span class="arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                            <ul class="options" style="display: none;">
+                                                <li class="option">All Classes</li>
+                                                <li class="option">GRADE 2C</li>
+                                                <li class="option">GRADE 1A</li>
+                                                <li class="option">GRADE 4D</li>
+                                                <li class="option">GRADE 3C</li>
+                                                <li class="option">GRADE 5A</li>
+                                                <li class="option">GRADE 6E</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="double-inputs-group">
+                                        <div class="input-groups">
+                                            <label for="start-date">Date</label>
+                                            <input type="date" id="start-date" name="start-date" />
+                                        </div>
+                                        <div class="input-groups">
+                                            <input type="date" id="end-date" name="end-date" />
+                                        </div>
+                                    </div>
+                                    <div class="double-inputs-group">
+                                        <div class="input-groups">
+                                            <label for="start-time">Start Time:</label>
+                                            <input type="time" id="start-time" name="start-time" />
+                                        </div>
+                                        <div class="input-groups">
+                                            <input type="time" id="end-time" name="end-time" />
+                                        </div>
+                                    </div>
+                                    <div class="input-groups">
+                                        <label for="link">Enter a link:</label>
+                                        <input type="url" id="link" name="link" placeholder="Add link" />
+                                    </div>
+                                    <button class="create-btn" onclick="showDefaultDiv()" type="button">Create Event</button>
+                                </form>
+                            </div>
+                        </div>
+                        <div id="editDiv" class="box">
+                            <div class="add-event-main">
+                                <button class="btn btn-secondary" onclick="showDefaultDiv()"><i class="fa-regular fa-angle-left"></i></button>
+                                <h1>Edit Event</h1>
+                            </div>
+                            <div class="new-events-main">
+                                <div class="uploader">
+                                    <h2 class="uploadText"><i class="fa-regular fa-cloud-arrow-up"></i> Upload Event Banner</h2>
+                                    <input type="file" class="fileInput" accept="image/*" />
+                                    <div class="preview"></div>
+                                </div>
+                                <form>
+                                    <div class="input-groups">
+                                        <label for="title">Title</label>
+                                        <input type="text" id="title" name="title" placeholder="Enter Title of the event" />
+                                    </div>
+                                    <div class="input-groups">
+                                        <label for="description">Description</label>
+                                        <textarea id="description" name="description" placeholder="Add Description of the event"></textarea>
+                                    </div>
+                                    <div class="input-groups">
+                                        <label>Select Class</label>
+                                        <div class="custom-select custom-select1">
+                                            <span class="select-text">GRADE 2C</span>
+                                            <span class="arrow"><i class="fa-regular fa-angle-down"></i></span>
+                                            <ul class="options" style="display: none;">
+                                                <li class="option">All Classes</li>
+                                                <li class="option">GRADE 2C</li>
+                                                <li class="option">GRADE 1A</li>
+                                                <li class="option">GRADE 4D</li>
+                                                <li class="option">GRADE 3C</li>
+                                                <li class="option">GRADE 5A</li>
+                                                <li class="option">GRADE 6E</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="double-inputs-group">
+                                        <div class="input-groups">
+                                            <label for="start-date">Date</label>
+                                            <input type="date" class="date-input" id="start-date" name="start-date" />
+                                        </div>
+                                        <div class="input-groups">
+                                            <input type="date" class="date-input" id="end-date" name="end-date" />
+                                        </div>
+                                    </div>
+                                    <div class="double-inputs-group">
+                                        <div class="input-groups">
+                                            <label for="start-time">Start Time:</label>
+                                            <input type="time" id="start-time" name="start-time" />
+                                        </div>
+                                        <div class="input-groups">
+                                            <input type="time" id="end-time" name="end-time" />
+                                        </div>
+                                    </div>
+                                    <div class="input-groups">
+                                        <label for="link">Enter a link:</label>
+                                        <input type="url" id="link" name="link" placeholder="Add link" />
+                                    </div>
+                                    <div class="edit-event-btn">
+                                        <button onclick="openModal('modal14')" type="button">Delete</button>
+                                        <button onclick="closeModal('modal14'); showDefaultDiv()" type="button">Save Changes</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <button onclick="showEventDiv()" id="createEventBtn" class="plus-pop"><i class="fa-light fa-plus"></i></button>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/dashbaord.js"></script>
+        <script src="js/calender.js"></script>
+    </body>
+</html>

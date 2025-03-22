@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", serif;
+}
+:root {
+    --primary-color: #f1f3f9;
+    --secondary-color: #FB9730;
+    --background-color: #f4f4f4;
+    --text-color: #000000;
+    --purple-primary: #6A5AE0; 
+    --purple-light: #9698C1;  
+    --border-radius: 8px;
+    --border-color:#E1DEF9;
+    --overlay: #625c8b;
+    --light-purple2: #8789B8;
+    --white: #ffffff;
+    --bg-light:#DFDFE1;
+}
+ol,ul{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+input{
+    border: none;
+    outline: none;
+}
+::-webkit-scrollbar {
+    width: 4px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--light-purple2);
+    border-radius: 10px;
+}
+  

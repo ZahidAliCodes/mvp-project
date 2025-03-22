@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Rak's Pallikkoodam | School 2.o for Industry 4.0</title>
+        <!-- font awesome -->
+        <link rel="stylesheet" href="icons/css/all.min.css" />
+        <!-- css files -->
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/dashboard.css" />
+        <link rel="stylesheet" href="css/diary.css" />
+    </head>
+    <body>
+        <div class="container">
+            <aside class="sidebar">
+                <button class="close-btn" onclick="toggleSidebar()"><i class="fa-light fa-xmark"></i></button>
+                <div class="side-bar-header">
+                    <a href="index.html">
+                        <img src="assets/logo.svg" alt="logo" />
+                    </a>
+                    <h1>Class Teacher’s Classes</h1>
+                </div>
+                <ul>
+                    <h6>
+                        Active Classes <span><i class="fa-regular fa-plus"></i></span>
+                    </h6>
+                    <li>
+                        <a href="grade1.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Binance_coin.svg" alt="Binance_coin" />
+                                <p>GRADE 1A</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="classroom.html" class="active-nav">
+                            <div class="nav-item-na">
+                                <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective" />
+                                <p>GRADE 2C</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                                <span>2</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grade3.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Solana_perspective.svg" alt="Solana_perspective" />
+                                <p>GRADE 3B</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="grade4.html">
+                            <div class="nav-item-na">
+                                <img src="assets/Tron_perspective.svg" alt="Tron_perspective" />
+                                <p>GRADE 4D</p>
+                            </div>
+                            <div class="notify">
+                                <i class="fa-solid fa-message-dots"></i>
+                                <span>1</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <small>© Connected School</small>
+            </aside>
+            <main class="main-content">
+                <header class="header">
+                    <div class="header-inside">
+                        <div class="res-btn">
+                            <button class="sidebar-toggle" onclick="toggleSidebar()"><i class="fa-light fa-bars"></i></button>
+                            <div class="grade2">
+                                <img src="assets/Chainlink_perspective.svg" alt="Chainlink_perspective" />
+                                <h1>GRADE 2C</h1>
+                            </div>
+                        </div>
+                        <ul>
+                            <li class="hour-glass" onclick="openModal('modal2')">
+                                <a href="#"><i class="fa-solid fa-hourglass-half"></i></a>
+                                <span>1</span>
+                            </li>
+                            <li class="bell" onclick="openModal('modal3')">
+                                <a href="#"><i class="fa-solid fa-bell"></i></a>
+                                <span>11</span>
+                            </li>
+                            <li class="circle-question">
+                                <a href="#"><i class="fa-duotone fa-light fa-circle-question"></i></a>
+                            </li>
+                            <li class="avater" onclick="toggleDropdown(event)">
+                                <img src="assets/Avatar.svg" alt="avatar" />
+                                <i class="fa-light fa-chevron-down"></i>
+                                <form action="#" class="edit-card">
+                                    <button type="button" onclick="openModal('modal1')" class="active-bts">View Profile</button>
+                                    <button type="submit">Logout</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="header-inside-tabs">
+                        <ul>
+                            <li>
+                                <a href="classroom.html"><img src="assets/Books.svg" alt="Books" />Classroom</a>
+                            </li>
+                            <li>
+                                <a href="stroy.html"><img src="assets/Fire.svg" alt="Fire" />Class Story</a>
+                            </li>
+                            <li>
+                                <a href="diary.html" class="active-nav"><img src="assets/Message.svg" alt="Message" />Digital Diary <span>1</span></a>
+                            </li>
+                            <li>
+                                <a href="calendar.html"><img src="assets/Calendar.svg" alt="Calendar" />Calendar</a>
+                            </li>
+                            <li>
+                                <a href="portfolio.html"><img src="assets/Trophy.svg" alt="Trophy" />Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="homework.html"><img src="assets/Notebook.svg" alt="Notebook" />Homework</a>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+                <div id="modal15" class="modal">
+                    <div class="modal-content modal-content15">
+                        <span class="close-btn-mark" onclick="closeModal('modal15')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="edit-validation">
+                            <h1>New Message</h1>
+                            <div class="n-m-s">
+                                <form>
+                                    <i class="fa-light fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search Messages" />
+                                </form>
+                            </div>
+                            <div class="new-mass">
+                                <img src="assets/rocket.svg" alt="rocket" />
+                                <ul>
+                                    <li onclick="openModal('modal16'); closeModal('modal15')"><h2>New Mass Message</h2></li>
+                                    <li>Send the same message individually</li>
+                                </ul>
+                            </div>
+                            <div class="new-mass-groups">
+                                <h2>Students<span>(GRADE 2C)</span></h2>
+                                <ul>
+                                    <li>
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        Amir Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        Xavier Krishna Amir
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        Amir Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        Xavier Krishna Amir
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        Amir Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        Xavier Krishna Amir
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        Amir Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        Xavier Krishna Amir
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        Amir Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        Xavier Krishna Amir
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        Amir Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        Xavier Krishna Amir
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        Amir Krishna Xavier
+                                    </li>
+                                    <li>
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        Krishna Xavier
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal16" class="modal">
+                    <div class="modal-content modal-content16">
+                        <span class="prev-model" onclick="closeModal('modal16'),openModal('modal15');">
+                            <i class="fa-regular fa-arrow-left"></i>
+                        </span>
+                        <span class="close-btn-mark" onclick="closeModal('modal16')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="edit-validation">
+                            <h1>New Mass Message</h1>
+                            <h6>This message will be sent individually. It will not create a group chat.</h6>
+                            <div class="n-m-s">
+                                <form>
+                                    <i class="fa-light fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search Students" />
+                                </form>
+                            </div>
+                            <div class="new-mass-groups new-mass-groups2">
+                                <h2>Students<span>(GRADE 2C)</span></h2>
+                                <ul>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        <span>Amir Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        <span> Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        <span>Xavier Krishna Amir</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        <span>Amir Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        <span>Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        <span>Xavier Krishna Amir</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        <span>Amir Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        <span>Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        <span>Xavier Krishna Amir</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        <span>Amir Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        <span>Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        <span>Xavier Krishna Amir</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        <span>Amir Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        <span>Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        <span>Xavier Krishna Amir</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        <span>Amir Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        <span>Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-red.svg" alt="" />
+                                        <span>Xavier Krishna Amir</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-green.svg" alt="" />
+                                        <span>Amir Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                    <li onclick="toggleCheck(this)">
+                                        <img src="assets/plant-pink.svg" alt="" />
+                                        <span>Krishna Xavier</span>
+                                        <div class="checkbox"><i class="fas fa-check"></i></div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="new-mass-btn" onclick="handleMassMessage()" type="button">Create Mass Message</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal17" class="modal">
+                    <div class="modal-content modal-content16">
+                        <span class="prev-model" onclick="closeModal('modal17'),openModal('modal16');">
+                            <i class="fa-regular fa-arrow-left"></i>
+                        </span>
+                        <span class="close-btn-mark" onclick="closeModal('modal17')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="edit-validation">
+                            <h1>New Mass Message</h1>
+                            <h6>This message will be sent individually. It will not create a group chat.</h6>
+                            <div class="new-mass-groups new-mass-groups2">
+                                <h2 class="selected-count"></h2>
+                                <ul></ul>
+                            </div>
+                            <div class="chat-keyboard chat-keyboard2">
+                                <div class="images-ulpload-opt">
+                                    <img src="assets/Image_perspective.svg" alt="img" />
+                                    <img src="assets/Link.svg" alt="link" />
+                                    <span>😁</span>
+                                </div>
+                                <form>
+                                    <input type="text" placeholder="Also make sure everyone is presen|" />
+                                    <button type="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal1" class="modal">
+                    <div class="modal-content modal-content1">
+                        <span class="close-btn-mark" onclick="closeModal('modal1')"><i class="fa-solid fa-xmark"></i></span>
+                        <div class="profile-header">
+                            <h4>Teacher Profile</h4>
+                            <img src="assets/Avatar.svg" alt="avatar" />
+                            <h1>Teacher First Name</h1>
+                            <p>Teacher Last Name</p>
+                        </div>
+                        <div class="profile-body">
+                            <div class="subjects">
+                                <h1>Subjects</h1>
+                                <div class="subject-btn">
+                                    <button type="button">Mathematics</button>
+                                    <button type="button">Aptitude</button>
+                                    <button type="button">Logical Reasoning</button>
+                                </div>
+                            </div>
+                            <div class="subjects">
+                                <h1>Roles</h1>
+                                <div class="subject-btn"><button type="button">GRADE 2C - Class Teacher</button><br /></div>
+                                <div class="subject-btn">
+                                    <button type="button">GRADE 2C - Mathematics</button>
+                                    <button type="button">GRADE 5A - Aptitude</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submit-btn">
+                            <button onclick="closeModal('modal1')" type="submit">Need Support?</button>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal2" class="modal">
+                    <div class="modal-content model-aside">
+                        <div class="m-aside-head">
+                            <h1>Portfolio: Pending Approval</h1>
+                        </div>
+                        <div class="m-aside-body">
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>2d ago</span>.<span>GRADE 2D</span></li>
+                                </ul>
+                                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                                </ul>
+                                <img src="assets/student-3.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>5d ago</span>.<span>GRADE 3C</span></li>
+                                </ul>
+                                <img src="assets/student-4.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>3d ago</span>.<span>GRADE 1A</span></li>
+                                </ul>
+                                <img src="assets/student-1.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                        </div>
+                        <div class="m-aside-ft">
+                            <p>See All Pending Posts</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="modal3" class="modal">
+                    <div class="modal-content model-aside">
+                        <div class="m-aside-head">
+                            <h1>Notifications</h1>
+                        </div>
+                        <div class="m-aside-body">
+                            <div class="aside-pendings">
+                                <img src="assets/Message.svg" class="Trophy" alt="Message" />
+                                <ul>
+                                    <h1><a href="#">1 New Message for Student Name!</a></h1>
+                                    <li>Student: Hi mam. What is the...</li>
+                                    <li><span>13h ago</span>.<span>GRADE 2C</span></li>
+                                </ul>
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Fire.svg" class="Trophy" alt="Fire" />
+                                <ul>
+                                    <h1><a href="#">Student liked your photo on Class Story!</a></h1>
+                                    <li><span>1d ago</span>.<span>GRADE 4D</span></li>
+                                </ul>
+                                <img src="assets/student-5.png" class="aside-stuednts" alt="student-5" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Trophy.svg" class="Trophy" alt="Tron_perspective" />
+                                <ul>
+                                    <h1><a href="#">Student added a portfolio post!</a></h1>
+                                    <li>Student: Completed the ta...</li>
+                                    <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                                </ul>
+                                <img src="assets/student-2.png" class="aside-stuednts" alt="student-1" />
+                            </div>
+                            <div class="aside-pendings">
+                                <img src="assets/Notebook.svg" class="Trophy" alt="Notebook" />
+                                <ul>
+                                    <h1><a href="#">1 new update in Homework</a></h1>
+                                    <li>Student: Need Help</li>
+                                    <li><span>2d ago</span>.<span>GRADE 3B</span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="m-aside-ft">
+                            <span class="x-btn-mark"><i class="fa-solid fa-xmark"></i></span>
+                            <p>Clear All Notifications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-content-all">
+                    <div class="chat-container">
+                        <button class="back-btn" id="backBtn">← Back</button>
+                        <div class="tabs" id="tabContainer">
+                            <div class="tabs-header-main">
+                                <div class="tabs-header">
+                                    <div class="tbh-left">
+                                        <img src="assets/Message.svg" alt="Message" />
+                                        <h1>Messages</h1>
+                                    </div>
+                                    <img class="Subtract" onclick="openModal('modal15')" src="assets/Subtract.svg" alt="Subtract" />
+                                </div>
+                                <form>
+                                    <i class="fa-light fa-magnifying-glass"></i>
+                                    <input type="text" placeholder="Search Messages" />
+                                </form>
+                            </div>
+                            <div class="all-chats-main">
+                                <div class="tabs-btn">
+                                    <h1>Broadcast</h1>
+                                    <div class="tab" data-tab="tab1">
+                                        <div class="profile-info">
+                                            <img src="assets/speaker-circle.svg" alt="speaker" />
+                                            <ul>
+                                                <li>GRADE 2C</li>
+                                                <li>Sent 12h ago</li>
+                                            </ul>
+                                        </div>
+                                        <p>12h</p>
+                                    </div>
+                                </div>
+                                <div class="tabs-btn">
+                                    <h1>Groups</h1>
+                                    <div class="tab" data-tab="tab2">
+                                        <div class="profile-info">
+                                            <img src="assets/Avatar (11).svg" alt="speaker" />
+                                            <ul>
+                                                <li>GRADE 2C</li>
+                                                <li>Student Name: My son won’t be at...</li>
+                                            </ul>
+                                        </div>
+                                        <p>12h</p>
+                                    </div>
+                                    <div class="tab" data-tab="tab3">
+                                        <div class="profile-info">
+                                            <img src="assets/Avatar (6).svg" alt="speaker" />
+                                            <ul>
+                                                <li>Quiz Competition 21 Aug</li>
+                                                <li>Teacher Name: Are you all ready?</li>
+                                            </ul>
+                                        </div>
+                                        <p>15h</p>
+                                    </div>
+                                    <div class="tab" data-tab="tab4">
+                                        <div class="profile-info">
+                                            <div class="notifcation">
+                                                <img src="assets/Avatar (2).svg" alt="speaker" />
+                                                <span>1</span>
+                                            </div>
+                                            <ul>
+                                                <li>Sport Day Event</li>
+                                                <li>Teacher Name: Are you all ready?</li>
+                                            </ul>
+                                        </div>
+                                        <p>2d</p>
+                                    </div>
+                                </div>
+                                <div class="tabs-btn tab6">
+                                    <h1>Messages</h1>
+                                    <div class="tab" data-tab="tab5">
+                                        <div class="profile-info">
+                                            <div class="notifcation">
+                                                <img src="assets/plant-red.svg" alt="speaker" />
+                                                <span>1</span>
+                                            </div>
+                                            <ul>
+                                                <li>Student Name 1</li>
+                                                <li>Student Name: Not feeling well...</li>
+                                            </ul>
+                                        </div>
+                                        <p>2d</p>
+                                    </div>
+                                    <div class="tab" data-tab="tab6">
+                                        <div class="profile-info">
+                                            <img src="assets/plant-light.svg" alt="speaker" />
+                                            <ul>
+                                                <li>Student Name 2</li>
+                                                <li>Teacher Name: Late coming is not al...</li>
+                                            </ul>
+                                        </div>
+                                        <p>12h</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content" id="contentContainer">
+                            <div class="content-item default" id="defaultContent">
+                                <div class="chat-room-header"></div>
+                                <div class="room-default">
+                                    <img src="assets/message-2.svg" alt="message-2" />
+                                    <h1>Choose a thread to start messaging!</h1>
+                                </div>
+                            </div>
+                            <div class="content-item" id="tab1">
+                                <div class="chat-room-header">
+                                    <img src="assets/speaker-circle.svg" alt="speaker" />
+                                    <h1>GRADE 2C</h1>
+                                </div>
+                                <div class="chat-main-room">
+                                    <div class="time-tables">
+                                        <h1>This is the beginning of a broadcast message.</h1>
+                                        <button>22 August 2024</button>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>
+                                            Tomorrow everyone should bring <br />
+                                            their classwork notebooks
+                                        </p>
+                                    </div>
+                                    <div class="time-tables">
+                                        <button>22 August 2024</button>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>Nothing else for now!</p>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>All the parent respond to this message please!</p>
+                                    </div>
+                                    <div class="time-tables">
+                                        <button>22 August 2024</button>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>Nothing else for now!</p>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>All the parent respond to this message please!</p>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p><img src="assets/image 23.png" alt="image" /></p>
+                                    </div>
+                                </div>
+                                <div class="chat-keyboard">
+                                    <div class="images-ulpload-opt">
+                                        <img src="assets/Image_perspective.svg" alt="img" />
+                                        <img src="assets/Link.svg" alt="link" />
+                                        <span>😁</span>
+                                    </div>
+                                    <form>
+                                        <input type="text" placeholder="Type your message here..." />
+                                        <button type="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="content-item" id="tab2">
+                                <div class="chat-room-header">
+                                    <img src="assets/Avatar (11).svg" alt="speaker" />
+                                    <h1>GRADE 2C</h1>
+                                </div>
+                                <div class="chat-main-room">
+                                    <div class="time-tables">
+                                        <h1>This is the beginning of a broadcast message.</h1>
+                                        <button>22 August 2024</button>
+                                    </div>
+                                    <div class="chat-right">
+                                        <div class="edit-chat-btn">
+                                            <i class="fa-regular fa-ellipsis-stroke"></i>
+                                            <div class="edit-card">
+                                                <button class="active-bts">Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            Tomorrow everyone should bring <br />
+                                            their classwork notebooks
+                                        </p>
+                                    </div>
+                                    <div class="chat-right">
+                                        <div class="edit-chat-btn">
+                                            <i class="fa-regular fa-ellipsis-stroke"></i>
+                                            <div class="edit-card">
+                                                <button class="active-bts">Edit</button>
+                                                <button>Delete</button>
+                                            </div>
+                                        </div>
+                                        <p>Nothing else for now!</p>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>All the parent respond to this message please!</p>
+                                    </div>
+                                    <div class="chat-time">
+                                        <h2>Sent 11:28 am</h2>
+                                    </div>
+                                </div>
+                                <div class="chat-keyboard">
+                                    <div class="images-ulpload-opt">
+                                        <img src="assets/Image_perspective.svg" alt="img" />
+                                        <img src="assets/Link.svg" alt="link" />
+                                        <span>😁</span>
+                                    </div>
+                                    <form>
+                                        <input type="text" placeholder="Type your message here..." />
+                                        <button type="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="content-item" id="tab3">
+                                <div class="chat-room-header">
+                                    <img src="assets/Avatar (6).svg" alt="speaker" />
+                                    <h1>Quiz Competition 21 Aug</h1>
+                                </div>
+                                <div class="chat-main-room"></div>
+                                <div class="chat-keyboard">
+                                    <div class="images-ulpload-opt">
+                                        <img src="assets/Image_perspective.svg" alt="img" />
+                                        <img src="assets/Link.svg" alt="link" />
+                                        <span>😁</span>
+                                    </div>
+                                    <form>
+                                        <input type="text" placeholder="Type your message here..." />
+                                        <button type="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="content-item" id="tab4">
+                                <div class="chat-room-header">
+                                    <img src="assets/Avatar (2).svg" alt="speaker" />
+                                    <h1>Sport Day Event</h1>
+                                </div>
+                                <div class="chat-main-room"></div>
+                                <div class="chat-keyboard">
+                                    <div class="images-ulpload-opt">
+                                        <img src="assets/Image_perspective.svg" alt="img" />
+                                        <img src="assets/Link.svg" alt="link" />
+                                        <span>😁</span>
+                                    </div>
+                                    <form>
+                                        <input type="text" placeholder="Type your message here..." />
+                                        <button type="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="content-item" id="tab5">
+                                <div class="chat-room-header">
+                                    <img src="assets/plant-red.svg" alt="speaker" />
+                                    <h1>Student Name 1</h1>
+                                </div>
+                                <div class="chat-main-room">
+                                    <div class="time-tables">
+                                        <h1>This is the beginning of a broadcast message.</h1>
+                                        <button>22 August 2024</button>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>
+                                            Tomorrow everyone should bring <br />
+                                            their classwork notebooks
+                                        </p>
+                                    </div>
+                                    <div class="chat-left">
+                                        <img src="assets/plant-red.svg" alt="speaker" />
+                                        <div class="chat-user-name">
+                                            <h1>Student Name 1</h1>
+                                            <p>Sure mam! Anything else needed?</p>
+                                            <p>Please reply soon.</p>
+                                        </div>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>Nothing else for now!</p>
+                                    </div>
+                                    <div class="chat-right">
+                                        <p>All the parent respond to this message please!</p>
+                                    </div>
+                                </div>
+                                <div class="chat-keyboard">
+                                    <div class="images-ulpload-opt">
+                                        <img src="assets/Image_perspective.svg" alt="img" />
+                                        <img src="assets/Link.svg" alt="link" />
+                                        <span>😁</span>
+                                    </div>
+                                    <form>
+                                        <input type="text" placeholder="Type your message here..." />
+                                        <button type="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="content-item" id="tab6">
+                                <div class="chat-room-header">
+                                    <img src="assets/plant-light.svg" alt="speaker" />
+                                    <h1>Student Name 2</h1>
+                                </div>
+                                <div class="chat-main-room"></div>
+                                <div class="chat-keyboard">
+                                    <div class="images-ulpload-opt">
+                                        <img src="assets/Image_perspective.svg" alt="img" />
+                                        <img src="assets/Link.svg" alt="link" />
+                                        <span>😁</span>
+                                    </div>
+                                    <form>
+                                        <input type="text" placeholder="Type your message here..." />
+                                        <button type="submit">Send<i class="fa-solid fa-paper-plane"></i></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+
+        <script src="js/dashbaord.js"></script>
+        <script src="js/diary.js"></script>
+    </body>
+</html>
